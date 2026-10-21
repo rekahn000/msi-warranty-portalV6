@@ -1,0 +1,3338 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src 'self' data: blob: https://1000logos.net; connect-src https://script.google.com https://script.googleusercontent.com; base-uri 'none'; form-action 'none';">
+<meta name="referrer" content="no-referrer">
+<title>MSI Australia — Warranty Service Application</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAEiUlEQVR4nO2aW0wUVxjH/zM7zBa57LKzcikFQduipKRSWww0XhIgLSa9cAmCJLYp2kT0QZPah8boU41pmr40xD7U9KUQazRQSrFUMZUYmoJFKQhBApRGwkJZ9sKyC8vObh9MBqe7LssM6deE+T2d75tzvvOff86eOTNZpjdjZwAbGJZaADWaAdQCqNEMoBZAjWYAtQBqNAOoBVCjGUAtgBrNAGoB1GgGUAugRjOJrBZAjWYAtQBqNAOoBVCz4Q3gIumU1dKITTk7gvKDhaVYGvsz5Ji413fj+W+/Csrbr3dgvO6jkGNid++CUPkuYnJzEJW0GQzPQ3TOQ7Q74LXMwDP0EJ7BYThvd8FnnQur0dnZhdH3jq96bxEZ8DTM1WWY/PSL0NdqKiIvxLJIP38GwsHSoEucKQGcKQGSb81AXEEeAGDi9DnMXW1RpDlobjWDT+Vvg+F5oDxnFmAo3h9xneQTR0Le/H+BqhXAJRhgLCmE7fvrsrxQ+Q4YLrLSDMch8ehhWc7W2o7p+ktY+usRGJaFflsmDEV7Ya4qA2cW1EgOQpUBAGA+VCE3gGFgrirD6O0vQBcbi8Sjh+U40eHExMlPEBD9Us7dNwB37wAsX36NxNpa+N0etbIlFP0E3P2DUjs27xU8sy1DiuP35INPS13p+8eDsLV0hjhZ7Pd4ZDf/JAGvF9MXv4G97YYC1aFRZICjoxPLlhkpFqrLV9qHVtru/kG4B4bC1vLN2mRxVHISnjv3MThTghJpa0bZJij6Yb3SLIVC+VtgeR5RiWYYivZJ+dmGq6uW8oyMwjs5Jcttfr8aL3XfRFZLA9IvnIW5uhz6rRmKpK6G4qeA9XKTtFR1RgOMJcUQKkvB6HQAANG1ANsPP61eyO/Ho7MXgpY9o2OxKScbwsFSpJ0/g+yOJmxv+w7GNwuVSg6JYgO8UxY4b9+RYnNNBYSqlUeZrbkt4s3KcasTo4ePYXFkLGy/6B0vIvPi50g5dUyZ6BCoOgdYG65J7ZhXd4JPTZHi2cbVl/+TzHd1Y+iNCoxU1mK6/hJcv/3+VAOTTxyBPnOLMtH/QtVj0PHLHXinLOBTkmX5hfv98Aw9XHvBQACunl64enoBAIxOh5hdLyOprhbx+wpW+rEs4vfm4+/xCTXyH5dSNdrvh/VyU1Da2ngtROe1ExBFuLp7MXb0JHw2h+waJ5jWZQ7Vb4PWK82yDUycd8HW2h7xeP7ZZGTWfxZ2lw/4fEBAvkmKDueatYZC9Ulw2TID561O6ew/19QKv2cx8gIsC+OBYhhLijD/aw/sP96A6+49eCctgOiDfks6kuo+CDoXLPT2qZUOYB0MAICxD0+pL8IwiCvIk974wrFw9z4W7vWrnxP/gw8iAZ/v8RKPEM/gMMaPn163+ddlBahh2TKD/tz9iNuTj9jXchGdnQU+LRVcghGsnod/cQnLs1Z4HgzD3t4Be+vPCIjius3PaH+U3OBoBlALoEYzgFoANZoB1AKo0QygFkCNZgC1AGo0A6gFUKMZQC2AGs0AagHUaAZQC6BGM4BaADUb3oB/AE5BWClVHzWUAAAAAElFTkSuQmCC">
+<style>
+:root, [data-theme="light"] {
+  --bg: #f3f5f8;
+  --bg-accent: radial-gradient(circle at 50% 0%, rgba(206, 32, 48, 0.06), transparent 55%);
+  --surface: #ffffff;
+  --surface-elevated: #f8fafc;
+  --surface-subtle: #f1f5f9;
+  --border: #dce2ec;
+  --border-hover: #b8c4d6;
+  --text: #182230;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --msi-red: #ce2030;
+  --msi-red-hover: #b31927;
+  --msi-red-soft: rgba(206, 32, 48, 0.08);
+  --input-bg: #ffffff;
+  --shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+  --callout-warn-bg: #fffbeb;
+  --callout-warn-border: #f59e0b;
+  --callout-warn-text: #92400e;
+  --callout-mon-bg: #ecfdf5;
+  --callout-mon-border: #10b981;
+  --callout-mon-text: #065f46;
+}
+[data-theme="dark"] {
+  --bg: #0b0e14;
+  --bg-accent: radial-gradient(circle at 50% 0%, rgba(206, 32, 48, 0.12), transparent 55%);
+  --surface: #131822;
+  --surface-elevated: #1a212f;
+  --surface-subtle: #0f131c;
+  --border: #242e42;
+  --border-hover: #384663;
+  --text: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --msi-red: #e11d2e;
+  --msi-red-hover: #f42a3b;
+  --msi-red-soft: rgba(225, 29, 46, 0.14);
+  --input-bg: #0d1119;
+  --shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+  --callout-warn-bg: rgba(245, 159, 0, 0.1);
+  --callout-warn-border: rgba(245, 159, 0, 0.4);
+  --callout-warn-text: #fcd34d;
+  --callout-mon-bg: rgba(16, 185, 129, 0.08);
+  --callout-mon-border: rgba(16, 185, 129, 0.35);
+  --callout-mon-text: #a7f3d0;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding-bottom: 90px;
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Arial, sans-serif;
+  background-color: var(--bg); background-image: var(--bg-accent); background-attachment: fixed;
+  color: var(--text); transition: background-color 0.25s ease, color 0.25s ease;
+  -webkit-font-smoothing: antialiased;
+}
+#confettiCanvas {
+  position: fixed; inset: 0; width: 100%; height: 100%;
+  pointer-events: none; z-index: 10001;
+}
+.shell { max-width: 880px; margin: 0 auto; padding: 28px 20px; }
+.hidden { display: none !important; }
+.hp-field { position: absolute !important; left: -9999px !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important; }
+
+/* Header */
+.top {
+  display: flex; align-items: center; justify-content: space-between;
+  padding-bottom: 18px; margin-bottom: 24px; border-bottom: 2px solid var(--msi-red);
+  animation: fadeUp 0.3s ease-out both;
+}
+.brand { display: flex; align-items: center; gap: 14px; }
+.logo-badge {
+  background: #ffffff; padding: 6px 10px; border-radius: 8px;
+  display: flex; align-items: center; border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+.brand-title { font-size: 20px; font-weight: 800; letter-spacing: -0.3px; color: var(--text); }
+.brand-title span { color: var(--msi-red); }
+.brand-sub { font-size: 12px; color: var(--text-secondary); margin-top: 2px; }
+.header-actions { display: flex; align-items: center; gap: 8px; }
+.theme-toggle, .btn-reset-draft {
+  display: inline-flex; align-items: center; gap: 7px;
+  background: var(--surface); border: 1px solid var(--border); color: var(--text);
+  padding: 8px 14px; border-radius: 999px; font-size: 12.5px; font-weight: 600;
+  cursor: pointer; transition: all 0.2s ease; box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+.btn-reset-draft { color: var(--text-secondary); padding: 8px 12px; }
+.theme-toggle:hover, .btn-reset-draft:hover { border-color: var(--msi-red); color: var(--text); transform: translateY(-1px); }
+.theme-toggle svg, .btn-reset-draft svg {
+  width: 15px; height: 15px; stroke: currentColor; fill: none;
+  stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+}
+
+/* Cards & Section Headers */
+.card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+  padding: 24px 26px; margin-bottom: 18px; box-shadow: var(--shadow);
+  animation: fadeUp 0.35s ease-out both;
+}
+.section-header {
+  display: flex; align-items: center; gap: 10px;
+  margin: 0 0 16px; padding-bottom: 12px; border-bottom: 1px solid var(--border);
+}
+.step-num {
+  background: var(--msi-red); color: #fff; font-size: 12px; font-weight: 800;
+  width: 24px; height: 24px; border-radius: 6px;
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.section-title { font-size: 16px; font-weight: 700; margin: 0; color: var(--text); letter-spacing: -0.2px; }
+p.lead { font-size: 13.5px; line-height: 1.6; color: var(--text-secondary); margin: 0 0 16px; }
+
+/* Step 1 Prep Checklist Cards with Icons */
+.prep-header {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 10px; font-size: 13px; font-weight: 700; color: var(--text); flex-wrap: wrap; gap: 6px;
+}
+.prep-badge {
+  font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 999px;
+  background: var(--callout-mon-bg); color: var(--callout-mon-text); border: 1px solid var(--callout-mon-border);
+}
+.notice-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 22px; }
+.notice-pill {
+  background: var(--surface-elevated); border: 1px solid var(--border);
+  border-top: 3px solid var(--msi-red); border-radius: 10px; padding: 14px;
+  font-size: 12px; line-height: 1.5; color: var(--text-secondary);
+  display: flex; flex-direction: column; gap: 8px;
+}
+.notice-pill-top { display: flex; align-items: center; gap: 9px; }
+.notice-icon {
+  width: 32px; height: 32px; border-radius: 8px; background: var(--msi-red-soft);
+  color: var(--msi-red); display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.notice-icon svg { width: 17px; height: 17px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.notice-pill b { color: var(--text); font-size: 12.5px; line-height: 1.3; }
+
+/* Step 1 Visual Product Category Icon Grid */
+.cat-heading {
+  font-size: 13.5px; font-weight: 700; color: var(--text); margin: 0 0 10px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.cat-grid {
+  display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; margin-bottom: 6px;
+}
+.cat-grid > .cat-card { grid-column: span 2; }
+.cat-grid > .cat-card:nth-child(4),
+.cat-grid > .cat-card:nth-child(5) { grid-column: span 3; }
+.cat-card {
+  position: relative; background: var(--surface-elevated); border: 1.5px solid var(--border);
+  border-radius: 12px; padding: 16px 14px; text-align: center; cursor: pointer;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;
+  transition: all 0.2s cubic-bezier(0.22, 1, 0.36, 1); user-select: none;
+}
+.cat-card:hover {
+  border-color: var(--msi-red); transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(206, 32, 48, 0.08);
+}
+.cat-card.active {
+  border-color: var(--msi-red); background: var(--msi-red-soft);
+  box-shadow: 0 6px 18px rgba(206, 32, 48, 0.14);
+  animation: cardSelect 0.35s ease;
+}
+.cat-check {
+  position: absolute; top: 9px; right: 9px; width: 20px; height: 20px;
+  border-radius: 50%; background: var(--msi-red); color: #fff; font-size: 11px; font-weight: 800;
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0; transform: scale(0.5); transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.cat-card.active .cat-check { opacity: 1; transform: scale(1); }
+.cat-icon {
+  width: 48px; height: 48px; border-radius: 12px; background: var(--surface);
+  border: 1px solid var(--border); color: var(--msi-red);
+  display: flex; align-items: center; justify-content: center;
+  transition: all 0.2s ease;
+}
+.cat-card.active .cat-icon {
+  background: var(--msi-red); color: #ffffff; border-color: var(--msi-red);
+}
+.cat-icon svg { width: 25px; height: 25px; stroke: currentColor; fill: none; stroke-width: 1.85; stroke-linecap: round; stroke-linejoin: round; }
+.cat-title { font-size: 13.5px; font-weight: 700; color: var(--text); }
+.cat-sub { font-size: 11.5px; color: var(--text-secondary); line-height: 1.35; }
+
+
+/* Amazon Gate Cards */
+.amz-choice-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 6px; }
+.amz-choice-btn {
+  background: var(--surface-elevated); border: 1.5px solid var(--border); border-radius: 10px;
+  padding: 13px 15px; display: flex; align-items: center; gap: 11px; cursor: pointer;
+  text-align: left; font: inherit; color: var(--text); transition: all 0.2s ease;
+}
+.amz-choice-btn:hover { border-color: var(--msi-red); transform: translateY(-1px); }
+.amz-choice-btn.active { border-color: var(--msi-red); background: var(--msi-red-soft); }
+.amz-choice-icon {
+  width: 34px; height: 34px; border-radius: 8px; background: var(--surface);
+  border: 1px solid var(--border); display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; color: var(--msi-red);
+}
+.amz-choice-btn.active .amz-choice-icon { background: var(--msi-red); color: #fff; border-color: var(--msi-red); }
+.amz-choice-icon svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.amz-choice-text b { display: block; font-size: 13px; margin-bottom: 2px; }
+.amz-choice-text span { font-size: 11.5px; color: var(--text-secondary); }
+
+/* Amazon Redirect Gate */
+.amazon-blocker {
+  margin-top: 16px; background: var(--callout-warn-bg); border: 1px solid var(--callout-warn-border);
+  border-left: 4px solid #f59e0b; border-radius: 10px; padding: 18px 20px; animation: fadeUp 0.3s ease-out both;
+}
+.amazon-blocker h3 { margin: 0 0 6px; font-size: 15px; color: var(--text); }
+.amazon-blocker p { margin: 0 0 14px; font-size: 13px; line-height: 1.55; color: var(--text-secondary); }
+.btn-amazon {
+  display: inline-flex; align-items: center; gap: 8px; background: #f59e0b; color: #111827;
+  font-weight: 700; font-size: 13px; padding: 10px 16px; border-radius: 8px; text-decoration: none;
+  transition: filter 0.2s ease, transform 0.2s ease;
+}
+.btn-amazon:hover { filter: brightness(1.06); transform: translateY(-1px); }
+.amazon-help { margin-top: 18px; padding-top: 16px; border-top: 1px dashed var(--callout-warn-border); }
+.amazon-help h4 { margin: 0 0 6px; font-size: 14px; color: var(--text); }
+.amazon-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin-bottom: 12px; }
+.amazon-step-col { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; font-size: 13px; color: var(--text); }
+.amazon-step-col ol { margin: 8px 0 0; padding-left: 18px; color: var(--text-secondary); line-height: 1.55; }
+.amazon-step-col li + li { margin-top: 4px; }
+.amazon-blocker p.amazon-tip { margin: 0; }
+body:not([data-amz="component"]) .amz-var[data-cat="component"],
+body[data-amz="component"] .amz-var[data-cat="monitor"] { display: none; }
+
+/* Monitor / AIO Conditional Banner */
+.monitor-banner {
+  background: var(--callout-mon-bg); border: 1px solid var(--callout-mon-border);
+  border-radius: 12px; padding: 16px 18px; margin: 16px 0; animation: fadeUp 0.3s ease-out both;
+}
+.monitor-banner-title {
+  font-size: 13.5px; font-weight: 700; color: var(--callout-mon-text);
+  margin-bottom: 8px; display: flex; align-items: center; gap: 8px;
+}
+.monitor-reasons-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 10px 0 14px;
+}
+.monitor-reason-pill {
+  background: var(--surface); border: 1px solid var(--callout-mon-border);
+  border-top: 3px solid #10b981; border-radius: 8px; padding: 10px 12px;
+  font-size: 11.8px; line-height: 1.45; color: var(--text-secondary);
+}
+.monitor-reason-pill b { color: var(--text); display: block; margin-bottom: 3px; font-size: 12px; }
+.monitor-list { margin: 0; padding-left: 18px; font-size: 12.5px; line-height: 1.55; color: var(--text-secondary); }
+.monitor-list li { margin-bottom: 4px; }
+.monitor-list b { color: var(--text); }
+.no-power-note {
+  margin-top: 10px; padding: 10px 12px; background: var(--surface); border: 1px solid var(--border);
+  border-left: 3px solid #10b981; border-radius: 8px; font-size: 12px; line-height: 1.45; color: var(--text-secondary);
+}
+.no-power-note b { color: var(--text); }
+
+/* Clean Accordions */
+details.clean-accordion {
+  margin-top: 10px; background: var(--surface); border: 1px solid var(--border);
+  border-radius: 10px; overflow: hidden; transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+details.clean-accordion:hover { border-color: var(--border-hover); }
+details.clean-accordion summary {
+  padding: 12px 15px; font-size: 12.5px; font-weight: 600; color: var(--text);
+  cursor: pointer; list-style: none; display: flex; align-items: center;
+  justify-content: space-between; user-select: none; background: var(--surface-elevated);
+}
+details.clean-accordion summary::-webkit-details-marker { display: none; }
+.acc-badge {
+  font-size: 11px; padding: 3px 10px; border-radius: 999px;
+  background: var(--msi-red-soft); color: var(--msi-red); font-weight: 700;
+}
+details.clean-accordion[open] .acc-badge { background: var(--msi-red); color: #fff; }
+.accordion-content {
+  padding: 16px; border-top: 1px solid var(--border);
+  font-size: 12.5px; line-height: 1.55; color: var(--text-secondary);
+}
+
+/* Physical Damage & Turnaround Notices */
+.damage-note {
+  background: var(--msi-red-soft); border: 1px solid var(--border); border-left: 4px solid var(--msi-red);
+  border-radius: 10px; padding: 12px 14px; font-size: 12.5px; line-height: 1.55; color: var(--text-secondary);
+}
+.damage-note > b { color: var(--text); font-size: 13px; }
+.damage-note p { margin: 6px 0 0; }
+.damage-note p b { color: var(--text); }
+.turnaround-banner {
+  background: var(--callout-warn-bg); border: 1px solid var(--callout-warn-border);
+  border-left: 4px solid #f59e0b; border-radius: 10px; padding: 14px 18px;
+  margin-bottom: 14px; font-size: 13px; line-height: 1.6; color: var(--text-secondary);
+}
+.turnaround-banner h4 { margin: 0 0 6px; color: var(--text); font-size: 13.5px; font-weight: 700; }
+.turnaround-banner p { margin: 0; }
+.turnaround-banner p + p { margin-top: 6px; }
+.turnaround-banner b { color: var(--text); }
+
+/* Photo & Serial Number Visual Guide Grids */
+.photo-why, .photo-tip { margin: 0 0 8px; font-size: 12.5px; line-height: 1.55; color: var(--text-secondary); }
+.photo-why b, .photo-tip b { color: var(--text); }
+.photo-steps { margin-bottom: 8px; }
+.photo-tip { margin: 0; }
+.pg-label { font-size: 12px; font-weight: 800; letter-spacing: 0.3px; margin: 0 0 8px; }
+.pg-label.good { color: #16a34a; }
+.pg-label.bad { color: #dc2626; margin-top: 18px; }
+.pg-good-grid { display: grid; grid-template-columns: 1.6fr 1fr; gap: 12px; align-items: start; }
+.pg-bad-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; }
+.sn-guide-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 12px; }
+.sn-subtabs { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 12px; }
+.sn-subtab {
+  background: var(--surface-elevated); border: 1px solid var(--border); color: var(--text-secondary);
+  border-radius: 999px; padding: 5px 12px; font-size: 11.5px; font-weight: 600; cursor: pointer; transition: all 0.15s ease;
+}
+.sn-subtab:hover { border-color: var(--msi-red); color: var(--text); }
+.sn-subtab.active { background: var(--msi-red); border-color: var(--msi-red); color: #ffffff; }
+.sn-tip-bar {
+  margin-top: 12px; padding: 9px 12px; background: var(--surface-elevated);
+  border: 1px solid var(--border); border-left: 3px solid var(--msi-red);
+  border-radius: 8px; font-size: 12px; color: var(--text-secondary); line-height: 1.45;
+}
+.guide-card {
+  background: var(--surface-subtle); border: 1px solid var(--border);
+  border-radius: 10px; overflow: hidden; display: flex; flex-direction: column;
+}
+.guide-header { font-weight: 800; font-size: 11.5px; padding: 6px 10px; color: #fff; letter-spacing: 0.3px; }
+.guide-header.bad { background: #dc2626; }
+.guide-header.good { background: #16a34a; }
+.guide-header.msi { background: var(--msi-red); }
+.guide-stage svg { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; }
+.guide-caption { padding: 9px 11px; font-size: 11.5px; color: var(--text-secondary); line-height: 1.45; }
+.guide-caption b { color: var(--text); }
+
+/* Form Fields Grid */
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: stretch; }
+.field { display: flex; flex-direction: column; gap: 6px; }
+.field.full { grid-column: 1 / -1; }
+.form-grid > .field:not(.full) > input,
+.form-grid > .field:not(.full) > select,
+.form-grid > .field:not(.full) > .pass-wrap { margin-top: auto; }
+.address-block { border: 0; padding: 0; margin: 0; min-width: 0; }
+.address-legend {
+  padding: 0; margin-bottom: 6px; width: 100%; font-size: 13px; font-weight: 650; color: var(--text);
+  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 4px;
+}
+.address-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 4px; align-items: end; }
+.address-grid .field label { font-size: 12px; font-weight: 600; }
+.addr-street, .addr-suburb { grid-column: span 2; }
+.field label {
+  font-size: 13px; font-weight: 650; color: var(--text);
+  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 4px;
+}
+.req { color: var(--msi-red); margin-left: 3px; }
+.hint { font-size: 12px; color: var(--text-secondary); line-height: 1.45; }
+.char-counter { font-size: 11.5px; color: var(--text-muted); text-align: right; margin-top: 2px; font-variant-numeric: tabular-nums; }
+.char-counter.near-limit { color: #f59e0b; font-weight: 600; }
+.warn-inline {
+  display: inline-block; margin-top: 2px; padding: 8px 12px; border-radius: 8px;
+  background: var(--callout-warn-bg); border: 1px solid var(--callout-warn-border);
+  color: var(--callout-warn-text); font-size: 12px; line-height: 1.5;
+}
+.warn-inline.error-inline { background: var(--msi-red-soft); border-color: var(--msi-red); color: var(--text); }
+.warn-inline.info-inline { background: var(--callout-mon-bg); border-color: var(--callout-mon-border); color: var(--text); }
+.warn-inline b { color: var(--text); }
+
+input[type="text"], input[type="password"], input[type="tel"], input[type="email"], select, textarea {
+  font: 13.5px 'Segoe UI', Arial, sans-serif; background: var(--input-bg); color: var(--text);
+  border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; width: 100%; min-height: 42px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+input::placeholder, textarea::placeholder { color: var(--text-muted); }
+input:hover, select:hover, textarea:hover { border-color: var(--border-hover); }
+input:focus, select:focus, textarea:focus { border-color: var(--msi-red); outline: none; box-shadow: 0 0 0 3px var(--msi-red-soft); }
+textarea { resize: vertical; min-height: 82px; }
+.helper-link { font-size: 12px; color: var(--msi-red); text-decoration: none; font-weight: 600; }
+.helper-link:hover { text-decoration: underline; }
+
+.pass-wrap { position: relative; display: flex; align-items: center; }
+.pass-wrap input { padding-right: 64px; }
+.btn-toggle-pass {
+  position: absolute; right: 8px; background: var(--surface-elevated); border: 1px solid var(--border);
+  color: var(--text-secondary); border-radius: 6px; padding: 4px 8px; font-size: 11px; font-weight: 700; cursor: pointer;
+}
+.btn-toggle-pass:hover { border-color: var(--msi-red); color: var(--text); }
+
+/* Shipping Radio Cards & Reseller Callout */
+.reseller-tip-box {
+  margin-top: 10px; padding: 12px 14px; border-radius: 10px;
+  background: var(--callout-mon-bg); border: 1px solid var(--callout-mon-border);
+  border-left: 4px solid #10b981; font-size: 12.5px; line-height: 1.55; color: var(--text-secondary);
+}
+.reseller-tip-box b { color: var(--text); }
+.ship-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 8px; }
+.radio-card {
+  position: relative; display: flex; align-items: flex-start; gap: 11px;
+  background: var(--surface-elevated); border: 1px solid var(--border);
+  border-radius: 10px; padding: 13px 14px; cursor: pointer; transition: all 0.2s ease;
+}
+.radio-card:hover { border-color: var(--border-hover); transform: translateY(-1px); }
+.radio-card:has(input:checked) {
+  border-color: var(--msi-red); background: var(--msi-red-soft);
+  box-shadow: 0 4px 14px rgba(225, 29, 46, 0.12); animation: cardSelect 0.35s ease;
+}
+.radio-card input { margin-top: 3px; accent-color: var(--msi-red); transform: scale(1.15); }
+.radio-card-body { font-size: 12.5px; line-height: 1.45; color: var(--text-secondary); }
+.radio-card-body b { color: var(--text); display: block; margin-bottom: 3px; font-size: 13px; }
+.badge {
+  display: inline-block; padding: 2px 7px; border-radius: 4px; font-size: 10.5px;
+  font-weight: 700; color: #fff; margin-right: 5px; vertical-align: middle;
+}
+.badge.auspost { background: #dc2626; }
+.badge.startrack { background: #2563eb; }
+.badge.dropoff { background: #16a34a; }
+.badge.self { background: #475569; }
+
+/* Direct File Upload Dropzones (v5.4) */
+.upload-section { margin: 18px 0; display: flex; flex-direction: column; gap: 14px; }
+.upload-card {
+  background: var(--surface-elevated); border: 2px dashed var(--border-hover);
+  border-radius: 12px; padding: 16px 18px; transition: all 0.22s ease; position: relative;
+}
+.upload-card:hover, .upload-card.dragover {
+  border-color: var(--msi-red); background: var(--msi-red-soft);
+}
+.upload-card.has-file {
+  border-style: solid; border-color: #10b981; background: var(--callout-mon-bg);
+  animation: cardSelect 0.35s ease;
+}
+.upload-header { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 6px; flex-wrap: wrap; }
+.upload-title { font-size: 13.5px; font-weight: 700; color: var(--text); display: flex; align-items: center; gap: 8px; }
+.upload-title svg { width: 18px; height: 18px; stroke: var(--msi-red); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
+.upload-card.has-file .upload-title svg { stroke: #10b981; }
+.upload-badge {
+  font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 999px;
+  background: var(--msi-red-soft); color: var(--msi-red);
+}
+.upload-badge.optional { background: var(--surface-subtle); color: var(--text-secondary); border: 1px solid var(--border); }
+.upload-card.has-file .upload-badge { background: #10b981; color: #ffffff; }
+.dropzone-trigger {
+  margin-top: 10px; padding: 16px; border-radius: 10px; background: var(--surface);
+  border: 1px solid var(--border); text-align: center; cursor: pointer;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.dropzone-trigger:hover { border-color: var(--msi-red); transform: translateY(-1px); }
+.dropzone-trigger strong { color: var(--msi-red); text-decoration: underline; }
+.file-list { margin-top: 10px; display: flex; flex-direction: column; gap: 8px; }
+.file-pill {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+  padding: 8px 12px; font-size: 12.5px; color: var(--text);
+}
+.file-pill-left { display: flex; align-items: center; gap: 10px; min-width: 0; }
+.file-thumb {
+  width: 52px; height: 38px; object-fit: cover; border-radius: 5px;
+  border: 1px solid var(--border); flex-shrink: 0;
+}
+.file-meta-wrap { display: flex; flex-direction: column; min-width: 0; }
+.file-name { font-weight: 700; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.file-orig { font-size: 11px; color: var(--text-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.btn-remove-file {
+  background: none; border: 1px solid var(--border); color: var(--text-secondary);
+  border-radius: 6px; padding: 4px 9px; font-size: 11.5px; font-weight: 700; cursor: pointer; flex-shrink: 0;
+}
+.btn-remove-file:hover { border-color: #dc2626; color: #dc2626; }
+.invoice-note {
+  margin-top: 8px; padding: 9px 12px; background: var(--msi-red-soft);
+  border-left: 3px solid var(--msi-red); border-radius: 8px; color: var(--text-secondary); font-size: 12px;
+}
+.invoice-note p { margin: 0; }
+.invoice-note p + p { margin-top: 4px; }
+.invoice-note b { color: var(--text); }
+
+/* Terms Grid & Agree Bar */
+.terms-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; font-size: 12px; line-height: 1.5; color: var(--text-secondary); }
+.terms-block { background: var(--surface-subtle); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; }
+.terms-block.full-span { grid-column: 1 / -1; }
+.terms-block h4 { margin: 0 0 6px; font-size: 12px; color: var(--text); border-bottom: 1px solid var(--border); padding-bottom: 5px; }
+.terms-block ul, .terms-block ol { margin: 0; padding-left: 16px; }
+.terms-block li { margin-bottom: 4px; }
+.terms-block b { color: var(--text); }
+.agree-bar {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  margin-top: 14px; padding: 13px 15px; background: var(--surface-elevated);
+  border: 1px solid var(--border); border-radius: 10px; font-size: 13px; font-weight: 600;
+  color: var(--text); cursor: pointer; transition: border-color 0.2s ease, opacity 0.2s ease;
+}
+.agree-bar.locked { border-style: dashed; background: var(--surface-subtle); }
+.agree-bar:hover { border-color: var(--msi-red); }
+.agree-left { display: flex; align-items: center; gap: 11px; }
+.agree-bar input { width: 18px; height: 18px; accent-color: var(--msi-red); cursor: pointer; flex-shrink: 0; }
+.agree-bar input:disabled { cursor: not-allowed; opacity: 0.45; }
+.policy-lock-hint {
+  font-size: 11.5px; font-weight: 700; color: var(--msi-red);
+  background: var(--msi-red-soft); padding: 4px 9px; border-radius: 6px; white-space: nowrap;
+}
+.accordion-highlight {
+  border-color: var(--msi-red) !important;
+  box-shadow: 0 0 0 3px var(--msi-red-soft) !important;
+  animation: shake 0.45s ease both !important;
+}
+
+/* Primary Submit Button & Status */
+.actions { margin-top: 18px; display: flex; flex-direction: column; align-items: stretch; }
+.btn-primary {
+  background: linear-gradient(135deg, var(--msi-red) 0%, #b81422 100%);
+  border: none; border-radius: 10px; color: #ffffff; font-size: 14.5px; font-weight: 700;
+  padding: 15px 22px; cursor: pointer; display: inline-flex; align-items: center;
+  justify-content: center; gap: 10px; box-shadow: 0 6px 20px rgba(225, 29, 46, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+.btn-primary svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.btn-primary:hover:not(:disabled) { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(225, 29, 46, 0.38); filter: brightness(1.05); }
+.btn-primary:disabled { opacity: 0.72; cursor: wait; }
+.status { margin-top: 14px; padding: 14px 16px; border-radius: 10px; font-size: 13px; line-height: 1.55; display: none; animation: fadeUp 0.3s ease-out both; }
+.status.ok { display: block; background: var(--callout-mon-bg); border: 1px solid var(--callout-mon-border); color: var(--text); }
+
+/* Modals */
+.modal-backdrop {
+  position: fixed; inset: 0; background: rgba(11, 14, 20, 0.68); backdrop-filter: blur(4px);
+  display: flex; align-items: center; justify-content: center; padding: 20px; z-index: 9999;
+}
+.modal-card {
+  background: var(--surface); border: 1px solid var(--border); border-top: 4px solid var(--msi-red);
+  border-radius: 14px; max-width: 540px; width: 100%; padding: 24px 26px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35); animation: modalPop 0.22s ease-out both;
+}
+.modal-card.success-card { border-top-color: #10b981; }
+.modal-card.warn-card { border-top-color: #f59e0b; }
+.modal-card.stop-card { border-top-color: #dc2626; }
+.modal-header { display: flex; align-items: center; gap: 11px; margin-bottom: 12px; }
+.modal-icon {
+  width: 36px; height: 36px; border-radius: 8px; background: var(--msi-red-soft); color: var(--msi-red);
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.modal-icon.success-icon { background: var(--callout-mon-bg); color: #10b981; }
+.modal-icon.warn-icon { background: var(--callout-warn-bg); color: #f59e0b; }
+.modal-icon.stop-icon { background: rgba(220, 38, 38, 0.12); color: #dc2626; }
+.modal-icon svg { width: 20px; height: 20px; stroke: currentColor; fill: none; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+.modal-title { font-size: 16px; font-weight: 800; color: var(--text); margin: 0; }
+.modal-body { font-size: 13.5px; line-height: 1.6; color: var(--text-secondary); margin: 0 0 16px; }
+.modal-body p { margin: 0 0 10px; }
+.modal-body p:last-child { margin-bottom: 0; }
+.modal-body b, .modal-body strong { color: var(--text); font-weight: 600; }
+.modal-links-box {
+  background: var(--surface-elevated); border: 1px solid var(--border); border-radius: 10px;
+  padding: 13px 15px; margin-bottom: 18px; font-size: 12.5px; line-height: 1.55; color: var(--text-secondary);
+}
+.modal-links-box > div + div { margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--border); }
+.modal-box-title { color: var(--text); font-weight: 700; font-size: 13px; display: block; margin: 0 0 4px; }
+.modal-links-box p { margin: 0 0 8px; }
+.modal-links-box p:last-child { margin-bottom: 0; }
+.modal-actions { display: flex; justify-content: flex-end; gap: 10px; }
+.btn-modal {
+  background: var(--msi-red); color: #ffffff; border: none; border-radius: 8px;
+  padding: 10px 20px; font-size: 13.5px; font-weight: 700; cursor: pointer;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+.btn-modal:hover { background: var(--msi-red-hover); transform: translateY(-1px); }
+
+/* Reward Hero Badge inside Submit Success Modal */
+.reward-hero { text-align: center; padding: 8px 0 14px; }
+.reward-trophy {
+  width: 64px; height: 64px; border-radius: 50%; margin: 0 auto 10px;
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.22) 0%, rgba(16, 185, 129, 0.06) 70%);
+  border: 2px solid #10b981; color: #10b981;
+  display: flex; align-items: center; justify-content: center;
+  animation: dotPop 0.55s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.reward-trophy svg { width: 32px; height: 32px; stroke: currentColor; fill: none; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+.reward-pill {
+  display: inline-block; padding: 3px 11px; border-radius: 999px; font-size: 11px; font-weight: 800;
+  background: var(--callout-mon-bg); color: #10b981; border: 1px solid var(--callout-mon-border);
+  margin-bottom: 6px; letter-spacing: 0.3px;
+}
+
+/* Progress Bar with Reward Completion Pill */
+.progress {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+  padding: 14px 20px 14px; margin-bottom: 18px; box-shadow: var(--shadow);
+  position: sticky; top: 0; z-index: 20; animation: fadeUp 0.4s 0.08s ease-out backwards;
+}
+.progress-top-meta {
+  display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;
+  font-size: 11.5px; font-weight: 700; color: var(--text-secondary);
+}
+.progress-pct-pill {
+  padding: 2px 9px; border-radius: 999px; background: var(--msi-red-soft);
+  color: var(--msi-red); font-weight: 800; transition: all 0.3s ease;
+}
+.progress-pct-pill.complete { background: #10b981; color: #fff; }
+.progress-track { height: 6px; background: var(--surface-subtle); border: 1px solid var(--border); border-radius: 999px; overflow: hidden; }
+.progress-fill {
+  height: 100%; width: 0; background: linear-gradient(90deg, var(--msi-red) 0%, #10b981 100%);
+  border-radius: 999px; position: relative; overflow: hidden;
+  transition: width 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.progress-fill::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.45), transparent);
+  animation: shimmer 2.4s ease-in-out infinite;
+}
+.progress-steps {
+  list-style: none; margin: 12px 0 0; padding: 0;
+  display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px;
+}
+.progress-step {
+  display: flex; flex-direction: column; align-items: center; gap: 5px; width: 100%;
+  background: none; border: none; padding: 0; font: inherit; font-size: 11.5px;
+  font-weight: 600; color: var(--text-muted); cursor: default;
+}
+.progress-step:not(:disabled) { cursor: pointer; }
+.progress-step:not(:disabled):hover .progress-dot { border-color: var(--msi-red); }
+.progress-dot {
+  width: 26px; height: 26px; border-radius: 50%; display: inline-flex; align-items: center;
+  justify-content: center; font-size: 12px; font-weight: 800; background: var(--surface-elevated);
+  border: 2px solid var(--border); color: var(--text-muted); position: relative; transition: all 0.2s ease;
+}
+.progress-step.done { color: var(--text-secondary); }
+.progress-step.done .progress-dot {
+  background: var(--callout-mon-bg); border-color: #10b981; color: #10b981;
+  font-size: 0; animation: dotPop 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.progress-step.done .progress-dot::after {
+  content: "✓"; font-size: 13px;
+  animation: checkDraw 0.35s 0.1s cubic-bezier(0.34, 1.56, 0.64, 1) backwards;
+}
+.progress-step.current { color: var(--text); }
+.progress-step.current .progress-dot {
+  background: var(--msi-red); border-color: var(--msi-red); color: #fff;
+  box-shadow: 0 0 0 4px var(--msi-red-soft);
+  animation: dotPop 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), ringPulse 2.2s 0.4s ease-in-out infinite;
+}
+
+/* Step Navigation */
+.step-nav {
+  margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+}
+.step-nav .btn-primary { padding: 12px 22px; margin-left: auto; }
+.btn-back {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+  color: var(--text); font-size: 13.5px; font-weight: 600; padding: 11px 18px;
+  cursor: pointer; transition: border-color 0.2s ease, transform 0.2s ease;
+}
+.btn-back:hover { border-color: var(--msi-red); transform: translateX(-2px); }
+
+/* Footer & Changelog */
+.privacy-footnote {
+  margin-top: 14px; padding: 12px 16px 4px; text-align: center;
+  font-size: 11.5px; line-height: 1.55; color: var(--text-muted);
+}
+.privacy-footnote svg {
+  width: 13px; height: 13px; vertical-align: -2px; margin-right: 4px;
+  stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+}
+.version-row { display: flex; justify-content: flex-end; margin-top: 8px; padding-right: 4px; }
+.version-container { position: relative; display: inline-flex; flex-direction: column; align-items: flex-end; }
+.version-trigger {
+  background: none; border: none; padding: 2px 4px; font: inherit; font-size: 10.5px;
+  color: var(--text-muted); opacity: 0.82; letter-spacing: 0.2px; cursor: pointer;
+  display: inline-flex; align-items: center; gap: 5px; border-radius: 4px;
+}
+.version-trigger:hover { opacity: 1; color: var(--text); text-decoration: underline; }
+.changelog-popup {
+  position: absolute; top: calc(100% + 6px); right: 0; width: 370px; max-width: calc(100vw - 32px);
+  background: var(--surface); border: 1px solid var(--border); border-top: 3px solid var(--msi-red);
+  border-radius: 10px; padding: 12px 14px; box-shadow: var(--shadow); text-align: left;
+  z-index: 1000; animation: revealDown 0.2s ease-out both;
+}
+.changelog-popup-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding-bottom: 6px; margin-bottom: 8px; border-bottom: 1px solid var(--border);
+}
+.changelog-popup-title { font-size: 11.5px; font-weight: 700; color: var(--text); }
+.changelog-close {
+  background: none; border: none; color: var(--text-muted); font-size: 12px;
+  font-weight: 700; cursor: pointer; padding: 2px 5px; border-radius: 4px; line-height: 1;
+}
+.changelog-close:hover { color: var(--msi-red); background: var(--surface-subtle); }
+.changelog-entry { font-size: 11px; line-height: 1.45; color: var(--text-secondary); }
+.changelog-entry + .changelog-entry { margin-top: 8px; padding-top: 8px; border-top: 1px dashed var(--border); }
+.changelog-ver { font-weight: 700; color: var(--text); display: inline-block; margin-bottom: 2px; }
+.changelog-ver span { font-weight: 600; color: var(--msi-red); margin-left: 4px; }
+.changelog-entry ul { margin: 2px 0 0; padding-left: 15px; }
+.changelog-entry li { margin-bottom: 2px; }
+
+/* Keyframe Animations */
+@keyframes fadeUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes modalPop { from { opacity: 0; transform: scale(0.95) translateY(8px); } to { opacity: 1; transform: scale(1) translateY(0); } }
+@keyframes stepInForward { from { opacity: 0; transform: translateX(28px) scale(0.99); } to { opacity: 1; transform: none; } }
+@keyframes stepInBack { from { opacity: 0; transform: translateX(-28px) scale(0.99); } to { opacity: 1; transform: none; } }
+@keyframes revealDown { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
+@keyframes dotPop { 0% { transform: scale(0.6); } 60% { transform: scale(1.18); } 100% { transform: scale(1); } }
+@keyframes checkDraw { from { opacity: 0; transform: scale(0.3) rotate(-30deg); } to { opacity: 1; transform: none; } }
+@keyframes ringPulse { 0%, 100% { box-shadow: 0 0 0 4px var(--msi-red-soft); } 50% { box-shadow: 0 0 0 8px var(--msi-red-soft); } }
+@keyframes shimmer { from { transform: translateX(-100%); } to { transform: translateX(100%); } }
+@keyframes cardSelect { 0% { transform: scale(1); } 40% { transform: scale(1.02); } 100% { transform: scale(1); } }
+@keyframes shake { 0%, 100% { transform: translateX(0); } 20% { transform: translateX(-6px); } 40% { transform: translateX(5px); } 60% { transform: translateX(-3px); } 80% { transform: translateX(2px); } }
+@keyframes unlockGlow { 0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.45); } 100% { box-shadow: 0 0 0 12px rgba(16, 185, 129, 0); } }
+
+.wizard-step { animation: stepInForward 0.4s cubic-bezier(0.22, 1, 0.36, 1) backwards; }
+#rmaForm[data-dir="back"] .wizard-step { animation-name: stepInBack; }
+.btn-primary:active, .btn-back:active, .btn-modal:active { transform: scale(0.97); }
+.nav-arrow { display: inline-block; transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1); }
+.btn-primary:hover .nav-arrow { transform: translateX(4px); }
+.btn-back:hover .nav-arrow { transform: translateX(-3px); }
+.shake { animation: shake 0.45s ease both !important; }
+.agree-bar:not(.locked) { animation: unlockGlow 0.8s ease-out; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-delay: 0s !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}
+@media (max-width: 740px) {
+  .progress { padding: 12px 14px 10px; }
+  .progress-step span:not(.progress-dot) { display: none; }
+  .progress-step.current span:not(.progress-dot) { display: block; }
+  .notice-grid, .cat-grid, .amz-choice-grid, .monitor-reasons-grid, .form-grid, .ship-grid, .pg-good-grid, .terms-grid, .sn-guide-grid { grid-template-columns: 1fr; }
+  .cat-grid > .cat-card, .cat-grid > .cat-card:nth-child(4), .cat-grid > .cat-card:nth-child(5) { grid-column: 1 / -1; }
+  .address-grid { grid-template-columns: 1fr 1fr; }
+  .top, .agree-bar { flex-direction: column; align-items: flex-start; }
+  .top { gap: 14px; }
+  .header-actions { align-self: flex-end; }
+}
+</style>
+</head>
+<body>
+<canvas id="confettiCanvas"></canvas>
+
+<!-- Pop-Up Modal Alert for Non-Original Owner -->
+<div class="modal-backdrop hidden" id="ownerModal" role="dialog" aria-modal="true" aria-labelledby="ownerModalTitle">
+  <div class="modal-card">
+    <div class="modal-header">
+      <div class="modal-icon">
+        <svg viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+      </div>
+      <h3 class="modal-title" id="ownerModalTitle">A Quick Note for Second-Hand Owners</h3>
+    </div>
+    <div class="modal-body">
+      <p>Thanks for letting us know. Because you are not the original owner of this product, we can offer a repair or refurbished replacement only.</p>
+      <p>Any refunds or store credits remain with the original owner named on the tax invoice, unless the retailer has already updated the ownership details for you.</p>
+    </div>
+    <div class="modal-actions">
+      <button type="button" class="btn-modal" id="closeOwnerModalBtn">Got It, Thanks</button>
+    </div>
+  </div>
+</div>
+
+<!-- Pop-Up Modal Alert for Local WA Laptop Customers -->
+<div class="modal-backdrop hidden" id="leaderModal" role="dialog" aria-modal="true" aria-labelledby="leaderModalTitle">
+  <div class="modal-card success-card">
+    <div class="modal-header">
+      <div class="modal-icon success-icon">
+        <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+      </div>
+      <h3 class="modal-title" id="leaderModalTitle">Local WA Laptop Service Option Available</h3>
+    </div>
+    <div class="modal-body">
+      <p>We noticed your address is within the Greater Perth area near our authorised WA laptop service partner, Leader Computers.</p>
+      <p>For MSI laptops only (all other MSI products are serviced directly at our NSW service centre), we recommend contacting Leader Computers first as a priority local service option:</p>
+    </div>
+    <div class="modal-links-box">
+      <div>
+        <span class="modal-box-title">Leader Computers (WA Authorised Laptop Service Partner)</span>
+        <p>📍 Address: 39 King Edward Rd, Osborne Park WA 6017<br>
+        📞 Phone: <a href="tel:0863696000" class="helper-link">(08) 6369 6000</a><br>
+        <a href="https://www.google.com/maps/search/?api=1&query=Leader+Computers+39+King+Edward+Rd+Osborne+Park+WA+6017" target="_blank" rel="noopener noreferrer" class="helper-link">View Leader Computers on Google Maps ↗</a></p>
+      </div>
+      <div>
+        <span class="modal-box-title">Prefer to Deal Directly with MSI Australia?</span>
+        <p>Reaching out to Leader Computers first is optional. If you prefer to send your laptop directly to our MSI Australia Service Centre in NSW (or if Leader Computers has advised you to lodge with us), click below to continue with your application.</p>
+      </div>
+    </div>
+    <div class="modal-actions">
+      <button type="button" class="btn-modal" id="closeLeaderModalBtn">Continue Application with MSI</button>
+    </div>
+  </div>
+</div>
+
+<!-- Pop-Up Modal Alert for Local VIC Laptop Customers -->
+<div class="modal-backdrop hidden" id="centrecomModal" role="dialog" aria-modal="true" aria-labelledby="centrecomModalTitle">
+  <div class="modal-card success-card">
+    <div class="modal-header">
+      <div class="modal-icon success-icon">
+        <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+      </div>
+      <h3 class="modal-title" id="centrecomModalTitle">Local Victoria Laptop Service Option (Centre Com Customers)</h3>
+    </div>
+    <div class="modal-body">
+      <p>We noticed your address is within the Greater Melbourne area. In Victoria, Centre Com is an approved MSI laptop repairer exclusively for their own customers.</p>
+      <p>If you purchased your MSI laptop from Centre Com (all other MSI products or laptops bought from other retailers are sent to our NSW service centre), you may enquire about local warranty service with them first:</p>
+    </div>
+    <div class="modal-links-box">
+      <div>
+        <span class="modal-box-title">Centre Com Service &amp; Repair (For Centre Com Laptop Purchases Only)</span>
+        <p>Find out more about Centre Com's local warranty service and repair options here:<br>
+        <a href="https://www.centrecom.com.au/t/serviceandrepair?srsltid=AU7gw4Vm2ntrnIRy6PPWj2-n2p2zq3FdpHGbA86GhVX-ZyCuInnUrlfb" target="_blank" rel="noopener noreferrer" class="helper-link">Visit Centre Com Service &amp; Repair Page (centrecom.com.au) ↗</a></p>
+      </div>
+      <div>
+        <span class="modal-box-title">Bought Elsewhere or Prefer to Deal Directly with MSI Australia?</span>
+        <p>Enquiring with Centre Com is optional and only applies if you bought your laptop from them. If you purchased your laptop from another retailer, or prefer to send it directly to our MSI Australia Service Centre in NSW, click below to continue with your application.</p>
+      </div>
+    </div>
+    <div class="modal-actions">
+      <button type="button" class="btn-modal" id="closeCentrecomModalBtn">Continue Application with MSI</button>
+    </div>
+  </div>
+</div>
+
+<!-- Pop-Up Modal Alert When Selecting "NO — Please don't factory reset my system" -->
+<div class="modal-backdrop hidden" id="resetNoModal" role="dialog" aria-modal="true" aria-labelledby="resetNoModalTitle">
+  <div class="modal-card warn-card">
+    <div class="modal-header">
+      <div class="modal-icon warn-icon">
+        <svg viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+      </div>
+      <h3 class="modal-title" id="resetNoModalTitle">Important Notice Regarding Factory Reset &amp; Your Data</h3>
+    </div>
+    <div class="modal-body">
+      <p>While our team will endeavour to fix your issue without performing a factory reset, there may be certain circumstances that require a factory reset to complete the repair.</p>
+      <p>In that case, we will contact you to request your permission once again. If you do not grant permission, we may be unable to complete the repair and the system would need to be sent back to you as is.</p>
+    </div>
+    <div class="modal-links-box">
+      <div>
+        <span class="modal-box-title">Data Backups &amp; Owner Responsibility</span>
+        <p>Sensitive or non-backed-up data is solely your responsibility as the owner. MSI does not perform backups or data recovery, so please choose carefully.</p>
+        <p>If you need to back up your data before sending the device in for repair—and you cannot perform the backup yourself or are unsure how to—please contact a local computer repairer who can assist you with data recovery or backup prior to sending your device to us.</p>
+      </div>
+    </div>
+    <div class="modal-actions">
+      <button type="button" class="btn-modal" id="closeResetNoModalBtn">I Understand</button>
+    </div>
+  </div>
+</div>
+
+<!-- Pop-Up Modal Alert for Warranty Status -->
+<div class="modal-backdrop hidden" id="warrantyModal" role="dialog" aria-modal="true" aria-labelledby="warrantyModalTitle">
+  <div class="modal-card warn-card" id="warrantyModalCard">
+    <div class="modal-header">
+      <div class="modal-icon warn-icon" id="warrantyModalIcon">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+      </div>
+      <h3 class="modal-title" id="warrantyModalTitle">Warranty &amp; Repair Quote Information</h3>
+    </div>
+    <div class="modal-body" id="warrantyModalBody"></div>
+    <div class="modal-links-box" id="warrantyModalThirdPartyBox">
+      <div>
+        <span class="modal-box-title">Purchased a 3rd-Party Extended Warranty from Your Retailer?</span>
+        <p>If you purchased an extended warranty plan through your retailer (such as JB Hi-Fi "Extra Care" or The Good Guys "Gold Service Extras"), please return the product directly to that store for assistance under their policy. MSI is unable to process claims covered by 3rd-party retailer extended warranties.</p>
+      </div>
+    </div>
+    <div class="modal-actions">
+      <button type="button" class="btn-modal" id="closeWarrantyModalBtn">Got It, Thanks</button>
+    </div>
+  </div>
+</div>
+
+<!-- Celebratory Reward Modal After Submitting Application -->
+<div class="modal-backdrop hidden" id="submitSuccessModal" role="dialog" aria-modal="true" aria-labelledby="submitSuccessModalTitle">
+  <div class="modal-card success-card">
+    <div class="reward-hero">
+      <div class="reward-trophy">
+        <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+      </div>
+      <span class="reward-pill">APPLICATION &amp; FILES LODGED ✓</span>
+      <h3 class="modal-title" id="submitSuccessModalTitle" style="font-size:19px">You're All Done! We've Got Everything</h3>
+    </div>
+    <div class="modal-body" style="text-align:center">
+      <p>Great job completing your application! Your warranty details and uploaded files (<span id="modalAttachmentCount">1 file</span>) have been securely lodged with the MSI Australia Service Centre.</p>
+      <p>Our team usually responds within <b>30–60 business minutes</b> with your official RMA claim number and next steps.</p>
+    </div>
+    <div class="modal-links-box">
+      <div>
+        <span class="modal-box-title">Track Your RMA Progress Anytime</span>
+        <p>Once your RMA number arrives in your inbox, you can follow your repair status live here:<br>
+        <a href="https://account.msi.com/en/services/inquiry-history" target="_blank" rel="noopener noreferrer" class="helper-link">Track RMA Progress (account.msi.com) ↗</a></p>
+      </div>
+      <div>
+        <span class="modal-box-title">Haven't heard back within 1 business day?</span>
+        <p>Please check your spam/junk folder first, or reach out to our Oceania support team:<br>
+        <a href="https://www.msi.com/page/hot-line#area=Oceania" target="_blank" rel="noopener noreferrer" class="helper-link">Contact MSI Oceania Support Hotline ↗</a></p>
+      </div>
+    </div>
+    <div class="modal-actions">
+      <button type="button" class="btn-modal" id="closeSubmitModalBtn" style="background:#10b981;width:100%">Awesome, Thanks! 🎉</button>
+    </div>
+  </div>
+</div>
+
+<main class="shell">
+  <!-- Header -->
+  <header class="top">
+    <div class="brand">
+      <div class="logo-badge">
+        <img src="https://1000logos.net/wp-content/uploads/2018/10/MSI-Logo.jpg" width="105" alt="MSI Logo" style="display:block;height:auto" onerror="this.replaceWith(document.getElementById('msiFallbackLogo').content.cloneNode(true))">
+        <template id="msiFallbackLogo">
+          <svg width="92" height="28" viewBox="0 0 92 28" aria-label="MSI Logo">
+            <text x="4" y="22" font-family="Arial Black, Segoe UI, sans-serif" font-size="24" font-weight="900" font-style="italic" fill="#ce2030" letter-spacing="1">msi</text>
+          </svg>
+        </template>
+      </div>
+      <div>
+        <div class="brand-title">MSI <span>Warranty Service Application</span></div>
+        <div class="brand-sub">MSI Australia Service Centre · Official Direct RMA Portal</div>
+      </div>
+    </div>
+    <div class="header-actions">
+      <button type="button" class="btn-reset-draft hidden" id="resetDraftBtn" title="Clear saved form progress and start over">
+        <svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path><path d="M3 3v5h5"></path></svg>
+        <span>Reset Form</span>
+      </button>
+      <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle color theme">
+        <svg id="themeSvg" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        <span id="themeLabel">Dark Mode</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Sticky Progress Bar with Brain-Reward Completion Tracker -->
+  <nav class="progress" id="progressNav" aria-label="Application progress">
+    <div class="progress-top-meta">
+      <span id="progressStatusText">Step 1 of 5 · Choose Your Product</span>
+      <span class="progress-pct-pill" id="progressPctPill">0% Complete</span>
+    </div>
+    <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+    <ol class="progress-steps">
+      <li><button type="button" class="progress-step current" data-goto="1"><span class="progress-dot">1</span><span>Product</span></button></li>
+      <li><button type="button" class="progress-step" data-goto="2" disabled><span class="progress-dot">2</span><span>Your Details</span></button></li>
+      <li><button type="button" class="progress-step" data-goto="3" disabled><span class="progress-dot">3</span><span>Fault Details</span></button></li>
+      <li><button type="button" class="progress-step" data-goto="4" disabled><span class="progress-dot">4</span><span>Shipping</span></button></li>
+      <li><button type="button" class="progress-step" data-goto="5" disabled><span class="progress-dot">5</span><span>Upload &amp; Send</span></button></li>
+    </ol>
+  </nav>
+
+  <form id="rmaForm" novalidate autocomplete="on">
+    <!-- Hidden Anti-Bot Honeypot Field -->
+    <input type="text" id="f_website_hp" name="website_hp" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+    <!-- STEP 1: Plain-English Prep Guide & Visual Product Icon Grid -->
+    <section class="card wizard-step" data-step="1">
+      <div class="section-header">
+        <span class="step-num">1</span>
+        <h2 class="section-title">What You'll Need &amp; Your MSI Product</h2>
+      </div>
+      <p class="lead">
+        Welcome! We've made lodging your warranty claim simple and seamless—everything is completed right here on this page, including uploading your invoice and photos.
+      </p>
+
+      <div class="prep-header">
+        <span>Before you start, here are the only 3 things you'll need handy:</span>
+        <span class="prep-badge">⏱ Takes ~2 Minutes</span>
+      </div>
+
+      <div class="notice-grid">
+        <div class="notice-pill">
+          <div class="notice-pill-top">
+            <span class="notice-icon">
+              <svg viewBox="0 0 24 24"><path d="M3 5v14"></path><path d="M8 5v14"></path><path d="M12 5v14"></path><path d="M17 5v14"></path><path d="M21 5v14"></path></svg>
+            </span>
+            <b>1. Your Serial Number (S/N)</b>
+          </div>
+          <span>Found on the barcode sticker on your product or its original box. Not sure where to look? We'll show you a visual guide in Step 3.</span>
+        </div>
+
+        <div class="notice-pill">
+          <div class="notice-pill-top">
+            <span class="notice-icon">
+              <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="9" y1="15" x2="15" y2="15"></line></svg>
+            </span>
+            <b>2. Final Paid Tax Invoice</b>
+          </div>
+          <span>You'll upload a PDF or clear photo of your paid retailer tax invoice in Step 5 (automatically renamed to <b>Invoice</b> for you).</span>
+        </div>
+
+        <div class="notice-pill">
+          <div class="notice-pill-top">
+            <span class="notice-icon">
+              <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            </span>
+            <b>3. Pre-Sent Monitor Photo</b>
+          </div>
+          <span>For <b>Monitors &amp; All-in-One PCs only</b>: one straight-on photo showing all 4 screen edges to protect you against courier transit damage and pre-verify your screen condition.</span>
+        </div>
+      </div>
+
+      <!-- Visual Product Category Icon Grid -->
+      <div class="cat-heading">
+        <span>Tap your MSI product category below to begin:<span class="req">*</span></span>
+      </div>
+
+      <select id="f_category" class="hidden" required aria-hidden="true" tabindex="-1">
+        <option value="">-- Choose your product type --</option>
+        <option value="laptop">Laptop</option>
+        <option value="system">Desktop PC / Cubi NUC / Claw Handheld</option>
+        <option value="monitor">Monitor</option>
+        <option value="aio">All-in-One (AIO) Computer</option>
+        <option value="component">PC Component / Gaming Gear</option>
+      </select>
+
+      <div class="cat-grid" id="categoryIconGrid" role="radiogroup" aria-label="MSI Product Category">
+        <div class="cat-card" data-cat-val="laptop" role="radio" aria-checked="false" tabindex="0">
+          <span class="cat-check">✓</span>
+          <div class="cat-icon">
+            <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"></rect><path d="M2 20h20"></path></svg>
+          </div>
+          <div class="cat-title">Laptops</div>
+          <div class="cat-sub">Titan, Raider, Vector, Stealth, Katana, Cyborg, Prestige &amp; Modern</div>
+        </div>
+
+        <div class="cat-card" data-cat-val="system" role="radio" aria-checked="false" tabindex="0">
+          <span class="cat-check">✓</span>
+          <div class="cat-icon">
+            <svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2"></rect><line x1="10" y1="6" x2="14" y2="6"></line><circle cx="12" cy="17" r="1"></circle></svg>
+          </div>
+          <div class="cat-title">Desktops, NUC &amp; Claw</div>
+          <div class="cat-sub">MAG / MPG / MEG Gaming Towers, Cubi Mini PCs &amp; Claw Handhelds</div>
+        </div>
+
+        <div class="cat-card" data-cat-val="monitor" role="radio" aria-checked="false" tabindex="0">
+          <span class="cat-check">✓</span>
+          <div class="cat-icon">
+            <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"></rect><path d="M8 21h8"></path><path d="M12 17v4"></path></svg>
+          </div>
+          <div class="cat-title">Monitors</div>
+          <div class="cat-sub">MPG, MAG, G &amp; PRO Series QD-OLED, Curved &amp; Flat Monitors</div>
+        </div>
+
+        <div class="cat-card" data-cat-val="aio" role="radio" aria-checked="false" tabindex="0">
+          <span class="cat-check">✓</span>
+          <div class="cat-icon">
+            <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="13" rx="2"></rect><path d="M7 21h10"></path><path d="M10 16l-1 5"></path><path d="M14 16l1 5"></path></svg>
+          </div>
+          <div class="cat-title">All-in-One (AIO) PCs</div>
+          <div class="cat-sub">PRO AP272P, Modern AM242 / AM272 Series All-in-One Computers</div>
+        </div>
+
+        <div class="cat-card" data-cat-val="component" role="radio" aria-checked="false" tabindex="0">
+          <span class="cat-check">✓</span>
+          <div class="cat-icon">
+            <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"></rect><rect x="9" y="9" width="6" height="6"></rect><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"></path></svg>
+          </div>
+          <div class="cat-title">PC Components &amp; Gear</div>
+          <div class="cat-sub">Motherboards, GPUs, PSUs, Coolers, SSDs, Cases, Mice &amp; Keyboards</div>
+        </div>
+
+
+      </div>
+
+      <!-- Conditional Amazon Purchase Gate (Monitors & Components) -->
+      <div class="field full hidden" id="amazonGateField" style="margin-top:16px">
+        <label>
+          <span><span class="amz-var" data-cat="monitor">Where did you purchase this monitor?</span><span class="amz-var" data-cat="component">Where did you purchase this PC component or gaming gear?</span><span class="req">*</span></span>
+        </label>
+        <select id="f_amazon" class="hidden">
+          <option value="">-- Where did you buy it? --</option>
+          <option value="no">No — I bought it from another authorised Australian retailer</option>
+          <option value="yes">Yes — I bought it from Amazon</option>
+        </select>
+        <div class="amz-choice-grid">
+          <button type="button" class="amz-choice-btn" data-amz-choice="no">
+            <span class="amz-choice-icon">
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </span>
+            <span class="amz-choice-text">
+              <b>Authorised Australian Retailer</b>
+              <span>JB Hi-Fi, Centre Com, Scorptec, PCCG, PLE, Umart, Mwave, etc.</span>
+            </span>
+          </button>
+          <button type="button" class="amz-choice-btn" data-amz-choice="yes">
+            <span class="amz-choice-icon">
+              <svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+            </span>
+            <span class="amz-choice-text">
+              <b>Amazon Australia</b>
+              <span>Purchased via amazon.com.au</span>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Amazon Redirect Notice -->
+      <div class="amazon-blocker hidden" id="amazonBlocker">
+        <h3>Amazon Will Look After You for This One</h3>
+        <p>
+          <span class="amz-var" data-cat="monitor">Since you bought your MSI monitor from Amazon, Amazon handles the warranty and returns for it directly, so you'll need to return it to them rather than to us.</span><span class="amz-var" data-cat="component">Since you bought your MSI PC component or gaming gear from Amazon, Amazon handles the warranty and returns for it directly, so you'll need to return it to them rather than to us.</span> The Amazon Australia support team can arrange your return or replacement for you:
+        </p>
+        <a href="https://www.amazon.com.au/gp/help/customer/display.html?nodeId=508510" target="_blank" rel="noopener noreferrer" class="btn-amazon">
+          <span>Contact Amazon Australia Support</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+        </a>
+
+        <div class="amazon-help">
+          <h4>Past the 30-day return window?</h4>
+          <p>
+            <span class="amz-var" data-cat="monitor">If the online "Return or replace items" option is no longer available for your order, your monitor is still covered by its warranty and the Australian Consumer Law.</span><span class="amz-var" data-cat="component">If the online "Return or replace items" option is no longer available for your order, your PC component or gaming gear is still covered by its warranty and the Australian Consumer Law.</span> You will need to speak with an Amazon support agent directly to arrange a warranty claim:
+          </p>
+
+          <div class="amazon-steps">
+            <div class="amazon-step-col">
+              <b>On a computer</b>
+              <ol>
+                <li>Sign in at <b>amazon.com.au</b> and open <b>Customer Service</b> (bottom of the page or via the <b>Help</b> link).</li>
+                <li><span class="amz-var" data-cat="monitor">Select the order containing your MSI monitor.</span><span class="amz-var" data-cat="component">Select the order containing your MSI PC component or gaming gear.</span></li>
+                <li>Choose the item, then select <b>Something else</b> / <b>I need more help</b>.</li>
+                <li>Select <b>Chat with us</b> or <b>Request a phone call</b> to reach a support agent.</li>
+              </ol>
+            </div>
+            <div class="amazon-step-col">
+              <b>On mobile (Amazon Shopping app)</b>
+              <ol>
+                <li>Open the app and tap the <b>☰ Menu</b> (or your <b>profile</b> icon).</li>
+                <li>Scroll down and tap <b>Customer Service</b>.</li>
+                <li><span class="amz-var" data-cat="monitor">Select the order containing your MSI monitor, then tap <b>Something else</b> / <b>I need more help</b>.</span><span class="amz-var" data-cat="component">Select the order containing your MSI PC component or gaming gear, then tap <b>Something else</b> / <b>I need more help</b>.</span></li>
+                <li>Tap <b>Chat with us</b> or <b>Request a phone call</b> to reach a support agent.</li>
+              </ol>
+            </div>
+          </div>
+
+          <p class="amazon-tip">
+            <b>Tip:</b> <span class="amz-var" data-cat="monitor">Tell the agent your monitor is faulty and outside the 30-day return window,</span><span class="amz-var" data-cat="component">Tell the agent your PC component or gaming gear is faulty and outside the 30-day return window,</span> and that you are requesting a warranty claim under the Australian Consumer Law. Have your order number and a description of the fault ready.
+          </p>
+        </div>
+      </div>
+
+      <div class="step-nav hidden" id="step1Nav">
+        <button type="button" class="btn-primary" data-nav="next">Continue to Your Details <span class="nav-arrow">→</span></button>
+      </div>
+    </section>
+
+    <!-- STEPS 2–5 -->
+    <div id="mainFormContainer">
+
+      <!-- STEP 2: Your Contact & Shipping Details -->
+      <section class="card wizard-step hidden" data-step="2">
+        <div class="section-header">
+          <span class="step-num">2</span>
+          <h2 class="section-title">A Little About You</h2>
+        </div>
+
+        <div class="form-grid">
+          <div class="field">
+            <label for="f_customer"><span>Your Full Name / Business Name<span class="req">*</span></span></label>
+            <span class="hint">If we're shipping to your business, please include the business name too.</span>
+            <input type="text" id="f_customer" required autocomplete="name" placeholder="e.g. John Citizen / ABC Pty Ltd">
+          </div>
+
+          <div class="field">
+            <label for="f_email"><span>Your Email Address<span class="req">*</span></span></label>
+            <span class="hint">We'll send your RMA claim number and service updates here.</span>
+            <input type="email" id="f_email" required autocomplete="email" placeholder="e.g. name@example.com">
+          </div>
+
+          <div class="field">
+            <label for="f_phone"><span>Your Phone Number<span class="req">*</span></span></label>
+            <span class="hint">The best number to reach you during the day, for courier and service updates.</span>
+            <input type="tel" id="f_phone" required autocomplete="tel" placeholder="e.g. 0412 345 678">
+          </div>
+
+          <div class="field">
+            <label for="f_owner"><span>Are You the Original Owner?<span class="req">*</span></span></label>
+            <span class="hint">Did you buy this product brand new yourself?</span>
+            <select id="f_owner" required>
+              <option value="">-- Please select --</option>
+              <option value="YES">YES — I bought it new</option>
+              <option value="NO">NO — I bought it second-hand or it was given to me</option>
+            </select>
+          </div>
+
+          <div id="ownerWarningInline" class="field full hidden" style="margin-top:-6px">
+            <span class="warn-inline">
+              Just so you know: as you're not the original owner, we can offer you a repair or refurbished replacement only. Refunds and credits stay with the original owner, unless the retailer has already updated the ownership details for you.
+            </span>
+          </div>
+
+          <fieldset class="field full address-block">
+            <legend class="address-legend">
+              <span>Your Physical Shipping Address<span class="req">*</span></span>
+              <a href="#" id="verifyMapsLink" class="helper-link" title="Open Google Maps to verify your typed address">Verify address on Google Maps ↗</a>
+            </legend>
+            <span class="hint">Pop each part of your Australian address in its own box. Your browser may even offer to fill these in for you.</span>
+            <div>
+              <span class="warn-inline">Please note: we can't ship to freight forwarders, Parcel Lockers or PO Boxes, so please use a physical street address.</span>
+            </div>
+            <div class="address-grid">
+              <div class="field addr-unit">
+                <label for="f_unit"><span>Unit / Apt / Level</span></label>
+                <input type="text" id="f_unit" autocomplete="address-line2" placeholder="Optional, e.g. 4">
+              </div>
+              <div class="field addr-number">
+                <label for="f_streetNumber"><span>Street Number<span class="req">*</span></span></label>
+                <input type="text" id="f_streetNumber" required placeholder="e.g. 12">
+              </div>
+              <div class="field addr-street">
+                <label for="f_streetName"><span>Street Name<span class="req">*</span></span></label>
+                <input type="text" id="f_streetName" required autocomplete="address-line1" placeholder="e.g. Example Street">
+              </div>
+              <div class="field addr-suburb">
+                <label for="f_suburb"><span>Suburb / Town<span class="req">*</span></span></label>
+                <input type="text" id="f_suburb" required autocomplete="address-level2" placeholder="e.g. Parramatta">
+              </div>
+              <div class="field addr-state">
+                <label for="f_state"><span>State<span class="req">*</span></span></label>
+                <select id="f_state" required autocomplete="address-level1">
+                  <option value="">-- Select --</option>
+                  <option value="ACT">ACT</option>
+                  <option value="NSW">NSW</option>
+                  <option value="NT">NT</option>
+                  <option value="QLD">QLD</option>
+                  <option value="SA">SA</option>
+                  <option value="TAS">TAS</option>
+                  <option value="VIC">VIC</option>
+                  <option value="WA">WA</option>
+                </select>
+              </div>
+              <div class="field addr-postcode">
+                <label for="f_postcode"><span>Postcode<span class="req">*</span></span></label>
+                <input type="text" id="f_postcode" required autocomplete="postal-code" inputmode="numeric" maxlength="4" pattern="[0-9]{4}" title="Please enter a 4-digit Australian postcode matching your state" placeholder="e.g. 2150">
+              </div>
+            </div>
+          </fieldset>
+
+          <div id="leaderWaInline" class="field full hidden" style="margin-top:-2px">
+            <span class="warn-inline info-inline">
+              📍 <b>Local Perth WA Laptop Service Option (Leader Computers):</b> Since you're located within ~50 km of Osborne Park WA and lodging an MSI laptop, you have the optional priority choice to first contact our authorised WA laptop service partner, Leader Computers, at 39 King Edward Rd, Osborne Park WA 6017 or on (08) 6369 6000. (This applies to laptops only — you are also welcome to continue directly with MSI Australia below if you prefer.)
+            </span>
+          </div>
+
+          <div id="centrecomVicInline" class="field full hidden" style="margin-top:-2px">
+            <span class="warn-inline info-inline">
+              📍 <b>Local Melbourne VIC Laptop Service Option (Centre Com Customers Only):</b> Since you're located within the Greater Melbourne region and lodging an MSI laptop, please note that Centre Com is an approved MSI repairer in Victoria exclusively for their own customers. If you purchased your laptop from Centre Com, you may optionally enquire about a local warranty service with them first at <a href="https://www.centrecom.com.au/t/serviceandrepair?srsltid=AU7gw4Vm2ntrnIRy6PPWj2-n2p2zq3FdpHGbA86GhVX-ZyCuInnUrlfb" target="_blank" rel="noopener noreferrer" class="helper-link">centrecom.com.au/t/serviceandrepair ↗</a>. (If you bought your laptop elsewhere, or prefer to deal directly with MSI Australia, simply continue below.)
+            </span>
+          </div>
+        </div>
+
+        <div class="step-nav">
+          <button type="button" class="btn-back" data-nav="back"><span class="nav-arrow">←</span> Back</button>
+          <button type="button" class="btn-primary" data-nav="next">Continue <span class="nav-arrow">→</span></button>
+        </div>
+      </section>
+
+      <!-- STEP 3: Product Serial Number, Warranty Status & Fault Information -->
+      <section class="card wizard-step hidden" data-step="3">
+        <div class="section-header">
+          <span class="step-num">3</span>
+          <h2 class="section-title">Tell Us What's Going On</h2>
+        </div>
+
+        <div class="form-grid">
+          <div class="field">
+            <label for="f_barcode"><span>Your Product's Serial Number (S/N)<span class="req">*</span></span></label>
+            <span class="hint">You'll find it on the barcode sticker on your product or its original box (no model name needed).</span>
+            <input type="text" id="f_barcode" required placeholder="e.g. MSB9XXXXXXXXXXXX or K2XXXXXXXXXXX">
+          </div>
+
+          <div class="field">
+            <label for="f_warranty_status"><span>Is Your Product Still Under Warranty?<span class="req">*</span></span></label>
+            <span class="hint">Let us know if you're aware of your product's warranty coverage.</span>
+            <select id="f_warranty_status" required>
+              <option value="">-- Please select --</option>
+              <option value="YES">Yes — It's still under MSI manufacturer warranty</option>
+              <option value="NO">No — It's out of warranty</option>
+              <option value="UNSURE">Unsure — Please check my tax invoice to confirm</option>
+              <option value="EXTENDED_3RD_PARTY">3rd-Party Extended Warranty (e.g. JB Hi-Fi Extra Care / The Good Guys Gold Service Extras)</option>
+            </select>
+          </div>
+
+          <div id="warrantyStatusInline" class="field full hidden" style="margin-top:-6px"></div>
+
+          <div class="field full" style="margin-top:-6px">
+            <details class="clean-accordion" id="snGuideAccordion">
+              <summary>
+                <span id="snGuideSummaryTitle">Not sure where to find your Serial Number (S/N)? View our visual guide</span>
+                <span class="acc-badge">Visual S/N Guide</span>
+              </summary>
+              <div class="accordion-content" id="snGuideDynamicContent"></div>
+            </details>
+          </div>
+
+          <div class="field full hidden" id="displayDamageNotice">
+            <div class="damage-note">
+              <b>A Quick Note About Physical Damage &amp; Pre-Shipment Verification</b>
+              <p>Cracks, chips, scratches, pressure marks, liquid marks and other blemishes on your screen or its frame are caused by impact, pressure or handling after purchase. Unfortunately, these count as accidental customer-induced damage and aren't covered by the MSI manufacturer warranty.</p>
+              <p>Your warranty covers manufacturing faults, such as dead or stuck pixels, lines, flickering, backlight or power faults that happen without physical damage. In Step 5, you'll upload a <b>Pre-sent Monitor Photo</b> showing all 4 bezels—this establishes your unit's pre-shipment condition to cover you in case of courier transit damage and verifies there is no pre-existing physical screen damage prior to shipping.</p>
+            </div>
+          </div>
+
+          <div class="field full" id="faultFieldContainer">
+            <label for="f_fault"><span>What's Happening With Your Product?<span class="req">*</span></span></label>
+            <span class="hint">Tell us as much as you can: what you're seeing, and when it happens. If requesting an out-of-warranty quote for a PC or laptop, detailed notes and photos help us provide a more accurate estimate.</span>
+            <textarea id="f_fault" required maxlength="1200" placeholder="e.g. The screen flickers a few minutes after I turn it on..."></textarea>
+            <div class="char-counter" id="faultCharCounter">0 / 1,200 characters</div>
+          </div>
+
+          <div id="systemCredentialsSection" class="field full hidden" style="margin-top:4px">
+            <div class="form-grid">
+              <div class="field">
+                <label for="f_login_name"><span>Your Windows Login Name</span></label>
+                <span class="hint">So our technicians can sign in to test your system.</span>
+                <input type="text" id="f_login_name" autocomplete="off" placeholder="Windows username (or N/A)">
+              </div>
+
+              <div class="field">
+                <label for="f_password"><span>Windows Login Password / PIN</span></label>
+                <span class="hint">Needed for diagnostic testing (never saved in browser drafts).</span>
+                <div class="pass-wrap">
+                  <input type="password" id="f_password" autocomplete="new-password" placeholder="Password / PIN (or N/A)">
+                  <button type="button" class="btn-toggle-pass" id="togglePassBtn">Show</button>
+                </div>
+              </div>
+
+              <div class="field full">
+                <label for="f_reset"><span>Can We Factory Reset Your System If Needed?<span class="req">*</span></span></label>
+                <div><span class="warn-inline">Heads up: a factory reset permanently erases everything on your system drive, so please back up anything important.</span></div>
+                <select id="f_reset">
+                  <option value="">-- Please select --</option>
+                  <option value="Yes">YES — You can factory reset it if needed</option>
+                  <option value="No">NO — Please don't factory reset my system</option>
+                </select>
+              </div>
+
+              <div id="resetNoWarningInline" class="field full hidden" style="margin-top:-6px">
+                <span class="warn-inline error-inline">
+                  <b>Important Note on Declining Factory Reset &amp; Data Responsibility:</b> While our team will endeavour to fix your issue without factory resetting, certain circumstances may require a factory reset. In that case, we will contact you to request permission once again—if permission is declined, we may be unable to complete the repair and the system would need to be returned as is. Sensitive or non-backed-up data is solely your responsibility as the owner; MSI does not perform backups or data recovery.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-nav" id="step3Nav">
+          <button type="button" class="btn-back" data-nav="back"><span class="nav-arrow">←</span> Back</button>
+          <button type="button" class="btn-primary" data-nav="next" id="step3NextBtn">Continue <span class="nav-arrow">→</span></button>
+        </div>
+      </section>
+
+      <!-- STEP 4: Return Shipping Preference -->
+      <section class="card wizard-step hidden" data-step="4">
+        <div class="section-header">
+          <span class="step-num">4</span>
+          <h2 class="section-title">How Would You Like to Send It to Us?</h2>
+        </div>
+
+        <div id="shippingNoticeCovered" class="hidden" style="margin-bottom:12px">
+          <span class="warn-inline">
+            ✓ <b>Good news, shipping to us is on us:</b> for desktops, laptops, Cubi NUC, handhelds, All-in-One PCs and monitors, you can choose an Australia Post drop-off, a StarTrack Express pickup, or drop it off yourself in Auburn NSW.
+          </span>
+        </div>
+
+        <div id="shippingNoticeComponent" class="hidden" style="margin-bottom:14px">
+          <span class="warn-inline" style="display:block">
+            <b>Sending a PC component or gaming gear:</b> we're unable to provide prepaid courier labels for motherboards, GPUs, SSDs, PSUs, cases, AIO coolers, mice, keyboards, headsets or accessories. You're welcome to drop it off at our Auburn NSW service centre or post it to us yourself.
+          </span>
+          <div class="reseller-tip-box">
+            💡 <b>Want to save on shipping costs? Return it via your Reseller / Place of Purchase:</b><br>
+            If you'd prefer not to pay for postage yourself, you can return your product directly to the <b>original reseller / retailer where you bought it</b>. Your retailer can assist in shipping the item back to MSI for a deeper-level technical assessment, and <b>the retailer generally covers the shipping cost for you</b>.
+          </div>
+        </div>
+
+        <div class="ship-grid">
+          <label class="radio-card" id="cardAusPost">
+            <input type="radio" name="Return Shipping Preference" value="Australia Post" id="radioAusPost">
+            <div class="radio-card-body">
+              <b><span class="badge auspost">Australia Post</span>Post Office Drop-Off</b>
+              Drop it off at your local Australia Post office. Perfect if you'd like help printing your shipping label.
+            </div>
+          </label>
+
+          <label class="radio-card" id="cardStarTrack">
+            <input type="radio" name="Return Shipping Preference" value="StarTrack Express" id="radioStarTrack">
+            <div class="radio-card-body">
+              <b><span class="badge startrack">StarTrack Express</span>Courier Pickup</b>
+              A courier collects it right from your door. You'll just need a printer for the shipping label.
+            </div>
+          </label>
+
+          <label class="radio-card" id="cardDropOff">
+            <input type="radio" name="Return Shipping Preference" value="Local Drop-off/Pickup (Auburn NSW)" id="radioDropOff">
+            <div class="radio-card-body">
+              <b><span class="badge dropoff">Local Drop-Off / Pickup</span>Auburn NSW Service Centre</b>
+              Pop in to Unit 40, 7–9 Percy St, Auburn NSW 2144 (Mon–Fri, 10 AM – 4 PM) once you've received your Claim#.
+            </div>
+          </label>
+
+          <label class="radio-card hidden" id="cardSelfPost">
+            <input type="radio" name="Return Shipping Preference" value="Self-Posting (Customer Arranged Shipping)" id="radioSelfPost">
+            <div class="radio-card-body">
+              <b><span class="badge self">Self-Posting</span>Use Your Favourite Carrier</b>
+              Post it to our Auburn Service Centre at your own cost once you've received your MSI Claim# (or return it to your original retailer if you'd like them to handle and cover shipping for you).
+            </div>
+          </label>
+        </div>
+
+        <div class="step-nav">
+          <button type="button" class="btn-back" data-nav="back"><span class="nav-arrow">←</span> Back</button>
+          <button type="button" class="btn-primary" data-nav="next">Continue to Final Step <span class="nav-arrow">→</span></button>
+        </div>
+      </section>
+
+      <!-- STEP 5: Terms, Monitor/AIO Photo Guide, Direct File Dropzones & Submit -->
+      <section class="card wizard-step hidden" data-step="5">
+        <div class="section-header">
+          <span class="step-num">5</span>
+          <h2 class="section-title">Upload Your Files &amp; Submit</h2>
+        </div>
+
+        <div class="turnaround-banner">
+          <h4>Estimated Repair Turnaround Time: 5–10 Business Days Upon Arrival</h4>
+          <p>Typical repair turnaround is 5–10 business days once your unit arrives at our Auburn service centre, depending on stock levels of replacement parts.</p>
+          <p>If replacement parts need to be ordered from our headquarters in Taiwan, an additional transit delay may occur. Please also note that our service centre workload consistently changes, which can influence overall turnaround times.</p>
+        </div>
+
+        <!-- Conditional Monitor & All-in-One PC Photo Instructions -->
+        <div class="monitor-banner hidden" id="displayPhotoBanner">
+          <div class="monitor-banner-title">
+            <span>Why We Need Your Pre-Sent Monitor Photo (Monitors &amp; All-in-One PCs)</span>
+          </div>
+          <p class="photo-why">
+            Before we issue your RMA number and courier label, please take <b>one straight-on, full-view photo</b> of your display and upload it below. Here is why this photo is required:
+          </p>
+
+          <div class="monitor-reasons-grid">
+            <div class="monitor-reason-pill">
+              <b>🛡️ 1. Protects You Against Courier Transit Damage</b>
+              Acts as your timestamped "before shipping" condition record to cover you in case the screen or frame is mishandled or damaged by couriers during transit to us.
+            </div>
+            <div class="monitor-reason-pill">
+              <b>✅ 2. Upfront Warranty Condition Verification</b>
+              Confirms the screen and all 4 bezels are free from pre-existing cracks, impact points, or customer-induced physical damage before you ship it, avoiding unexpected out-of-warranty fees.
+            </div>
+            <div class="monitor-reason-pill">
+              <b>⚡ 3. Faster Panel &amp; Parts Pre-Check</b>
+              Helps our technicians visually confirm the exact fault pattern and verify replacement panel stock before your parcel even arrives at our Auburn service centre.
+            </div>
+          </div>
+
+          <ol class="monitor-list photo-steps">
+            <li><b>Turn it on and show a bright image.</b> Display your desktop or a colourful picture. If the fault can be seen on screen (lines, dead pixels, discolouration), make sure it is showing when you take the photo.</li>
+            <li><b>Step back and face it straight on.</b> Stand about 1–1.5 metres in front of the unit, hold your phone sideways (landscape) and level with the middle of the screen.</li>
+            <li><b>Fit the whole display in the frame.</b> All four edges of the screen frame (top, bottom, left and right bezels) must be clearly visible, with a little space around them. Don't zoom in or crop.</li>
+            <li><b>Avoid glare and reflections.</b> Turn off your camera flash, and close blinds or switch off lights that reflect off the screen.</li>
+            <li><b>Check it's sharp and bright.</b> Tap the screen on your phone to focus, hold still, and retake the photo if it's blurry or dark.</li>
+          </ol>
+
+          <div class="no-power-note">
+            <b>Won't Turn On?</b> No problem. If your monitor or All-in-One PC can't power on, just take the same full-view photo with the screen off, making sure all four bezels and the full panel surface are clearly visible to document its pre-shipment physical condition.
+          </div>
+
+          <details class="clean-accordion" id="monitorGuideDetails">
+            <summary>
+              <span>View Photo Examples (Correct vs. Incorrect)</span>
+              <span class="acc-badge">Visual Guide</span>
+            </summary>
+            <div class="accordion-content">
+              <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+                <defs>
+                  <linearGradient id="pgWall" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#eef2f7"/><stop offset="100%" stop-color="#d9e0ea"/></linearGradient>
+                  <linearGradient id="pgDesk" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#b98c60"/><stop offset="100%" stop-color="#946944"/></linearGradient>
+                  <linearGradient id="pgWallpaper" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#38bdf8"/><stop offset="55%" stop-color="#6366f1"/><stop offset="100%" stop-color="#db2777"/></linearGradient>
+                  <linearGradient id="pgScreenOff" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1e293b"/><stop offset="100%" stop-color="#020617"/></linearGradient>
+                  <radialGradient id="pgGlare"><stop offset="0%" stop-color="#ffffff" stop-opacity="0.97"/><stop offset="45%" stop-color="#ffffff" stop-opacity="0.6"/><stop offset="100%" stop-color="#ffffff" stop-opacity="0"/></radialGradient>
+                  <filter id="pgBlur" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="2.4"/></filter>
+                  <symbol id="pgStand" viewBox="0 0 200 150">
+                    <rect x="91" y="117" width="18" height="21" fill="#1f2937"/><rect x="58" y="137" width="84" height="9" rx="4.5" fill="#111827"/><rect x="0" y="0" width="200" height="118" rx="4" fill="#0f172a"/>
+                    <text x="100" y="114.6" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="6" fill="#94a3b8">msi</text>
+                  </symbol>
+                  <symbol id="pgMonitor" viewBox="0 0 200 150">
+                    <use href="#pgStand" width="200" height="150"/><rect x="4" y="4" width="192" height="104" rx="1.5" fill="url(#pgWallpaper)"/><circle cx="152" cy="32" r="11" fill="#fde68a"/>
+                    <path d="M4 82 Q42 58 86 76 T196 66 V108 H4 Z" fill="#312e81" opacity="0.6"/><path d="M4 96 Q70 78 124 92 T196 88 V108 H4 Z" fill="#1e1b4b" opacity="0.7"/>
+                  </symbol>
+                  <symbol id="pgMonitorOff" viewBox="0 0 200 150">
+                    <use href="#pgStand" width="200" height="150"/><rect x="4" y="4" width="192" height="104" rx="1.5" fill="url(#pgScreenOff)"/><path d="M120 4 L150 4 L80 108 L50 108 Z" fill="#ffffff" opacity="0.05"/>
+                  </symbol>
+                  <symbol id="pgRoom" viewBox="0 0 320 200">
+                    <rect width="320" height="200" fill="url(#pgWall)"/><rect y="152" width="320" height="48" fill="url(#pgDesk)"/><rect y="152" width="320" height="3" fill="#7a5534" opacity="0.55"/>
+                  </symbol>
+                </defs>
+              </svg>
+
+              <div class="pg-label good">✓ Correct photos</div>
+              <div class="pg-good-grid">
+                <div class="guide-card">
+                  <div class="guide-header good">✓ CORRECT: Full view, screen on</div>
+                  <div class="guide-stage">
+                    <svg viewBox="0 0 320 200" role="img" aria-label="Correct photo: whole display visible, straight on, with all four bezels in frame">
+                      <use href="#pgRoom" width="320" height="200"/><use href="#pgMonitor" x="70" y="22" width="180" height="135"/>
+                      <rect x="62" y="14" width="196" height="122" rx="6" fill="none" stroke="#16a34a" stroke-width="2" stroke-dasharray="6 4"/>
+                      <g font-family="Arial, sans-serif" font-size="9" font-weight="700" fill="#ffffff" text-anchor="middle">
+                        <circle cx="160" cy="24" r="8" fill="#16a34a" stroke="#fff" stroke-width="1.5"/><text x="160" y="27.2">1</text>
+                        <circle cx="248" cy="75" r="8" fill="#16a34a" stroke="#fff" stroke-width="1.5"/><text x="248" y="78.2">2</text>
+                        <circle cx="200" cy="128" r="8" fill="#16a34a" stroke="#fff" stroke-width="1.5"/><text x="200" y="131.2">3</text>
+                        <circle cx="72" cy="75" r="8" fill="#16a34a" stroke="#fff" stroke-width="1.5"/><text x="72" y="78.2">4</text>
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="guide-caption">Taken straight on, from 1–1.5 m away, with nothing cut off. Must clearly show the <b>(1) top, (2) right, (3) bottom and (4) left bezels</b>.</div>
+                </div>
+
+                <div class="guide-card">
+                  <div class="guide-header good">✓ CORRECT: If it won't power on</div>
+                  <div class="guide-stage">
+                    <svg viewBox="0 0 320 200" role="img" aria-label="Correct photo for a unit that will not turn on">
+                      <use href="#pgRoom" width="320" height="200"/><use href="#pgMonitorOff" x="70" y="22" width="180" height="135"/>
+                      <rect x="62" y="14" width="196" height="122" rx="6" fill="none" stroke="#16a34a" stroke-width="2" stroke-dasharray="6 4"/>
+                    </svg>
+                  </div>
+                  <div class="guide-caption">Only if the fault stops it turning on: take the <b>same full-view photo</b> with the screen off, all four bezels visible.</div>
+                </div>
+              </div>
+
+              <div class="pg-label bad">✕ Avoid these mistakes</div>
+              <div class="pg-bad-grid">
+                <div class="guide-card">
+                  <div class="guide-header bad">✕ Too close / cropped</div>
+                  <div class="guide-stage"><svg viewBox="0 0 320 200"><use href="#pgRoom" width="320" height="200"/><use href="#pgMonitor" x="-70" y="-24" width="460" height="345"/></svg></div>
+                  <div class="guide-caption">The bezels are cut off, so the whole display can't be checked.</div>
+                </div>
+                <div class="guide-card">
+                  <div class="guide-header bad">✕ Glare / reflections</div>
+                  <div class="guide-stage">
+                    <svg viewBox="0 0 320 200">
+                      <use href="#pgRoom" width="320" height="200"/><use href="#pgMonitor" x="70" y="22" width="180" height="135"/>
+                      <polygon points="150,26 206,26 168,118 112,118" fill="#ffffff" opacity="0.38"/><ellipse cx="118" cy="62" rx="52" ry="36" fill="url(#pgGlare)"/>
+                    </svg>
+                  </div>
+                  <div class="guide-caption">Flash or light reflections hide the screen and any visible fault.</div>
+                </div>
+                <div class="guide-card">
+                  <div class="guide-header bad">✕ Angled / tilted</div>
+                  <div class="guide-stage">
+                    <svg viewBox="0 0 320 200">
+                      <use href="#pgRoom" width="320" height="200"/>
+                      <g transform="translate(160 92) rotate(-9) skewY(10) scale(0.62 0.86) translate(-100 -75)"><use href="#pgMonitor" width="200" height="150"/></g>
+                    </svg>
+                  </div>
+                  <div class="guide-caption">Taken from the side or above. Stand directly in front of the screen instead.</div>
+                </div>
+                <div class="guide-card">
+                  <div class="guide-header bad">✕ Blurry / too dark</div>
+                  <div class="guide-stage">
+                    <svg viewBox="0 0 320 200">
+                      <g filter="url(#pgBlur)"><use href="#pgRoom" width="320" height="200"/><use href="#pgMonitor" x="70" y="22" width="180" height="135"/></g>
+                      <rect width="320" height="200" fill="#000000" opacity="0.5"/>
+                    </svg>
+                  </div>
+                  <div class="guide-caption">Out of focus or poorly lit. Tap to focus, hold still and turn on room lights.</div>
+                </div>
+              </div>
+            </div>
+          </details>
+        </div>
+
+        <!-- Direct File Upload Dropzones (Auto-Renamed on Upload) -->
+        <div class="upload-section" id="uploadSection">
+          <!-- 1. Mandatory Tax Invoice Upload -> Auto-renamed to "Invoice" -->
+          <div class="upload-card" id="invoiceDropCard">
+            <div class="upload-header">
+              <span class="upload-title">
+                <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="9" y1="15" x2="15" y2="15"></line></svg>
+                <span>1. Upload Your Final Paid Tax Invoice<span class="req">*</span></span>
+              </span>
+              <span class="upload-badge" id="invoiceBadge">Required · Auto-saved as "Invoice"</span>
+            </div>
+            <div class="hint">Upload your official paid retailer tax invoice showing the retailer's name &amp; ABN, purchase date, product bought, and amount paid.</div>
+            <div class="invoice-note">
+              <p><b>We can't accept</b> order confirmations, bank transaction records, shipping labels or unpaid invoice slips.</p>
+            </div>
+            <input type="file" id="f_file_invoice" class="hidden" accept=".pdf,image/jpeg,image/png,image/webp">
+            <div class="dropzone-trigger" id="invoiceTrigger" role="button" tabindex="0">
+              📄 <strong>Click to select your Tax Invoice</strong> or drag &amp; drop it here<br>
+              <span class="hint">Accepts PDF, JPG, PNG or WEBP (Automatically renamed to <b>Invoice</b>)</span>
+            </div>
+            <div class="file-list" id="invoiceFileList"></div>
+          </div>
+
+          <!-- 2. Conditional Monitor / AIO 4-Bezel Display Photo Upload -> Auto-renamed to "Pre-sent Monitor Photo" -->
+          <div class="upload-card hidden" id="displayDropCard">
+            <div class="upload-header">
+              <span class="upload-title">
+                <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                <span>2. Upload Your Pre-Sent Monitor Photo (All 4 Bezels Visible)<span class="req">*</span></span>
+              </span>
+              <span class="upload-badge" id="displayBadge">Required · Auto-saved as "Pre-sent Monitor Photo"</span>
+            </div>
+            <div class="hint">Upload the straight-on, full-view photo of your display showing all 4 bezels (top, bottom, left, right) to protect you against transit damage and confirm pre-shipment screen condition.</div>
+            <input type="file" id="f_file_display" class="hidden" accept="image/jpeg,image/png,image/webp,.pdf">
+            <div class="dropzone-trigger" id="displayTrigger" role="button" tabindex="0">
+              🖥️ <strong>Click to select your Pre-Sent Monitor Photo</strong> or drag &amp; drop it here<br>
+              <span class="hint">Accepts JPG, PNG or WEBP (Automatically renamed to <b>Pre-sent Monitor Photo</b>)</span>
+            </div>
+            <div class="file-list" id="displayFileList"></div>
+          </div>
+
+          <!-- 3. Optional Additional Fault / Damage Photos Upload -->
+          <div class="upload-card" id="extraDropCard">
+            <div class="upload-header">
+              <span class="upload-title">
+                <svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+                <span>Additional Close-Up or Fault Photos (Optional)</span>
+              </span>
+              <span class="upload-badge optional" id="extraBadge">Optional (Up to 3)</span>
+            </div>
+            <div class="hint">Have a close-up shot of a dead pixel, screen line, or physical damage for an out-of-warranty quote? Attach up to 3 extra files here.</div>
+            <input type="file" id="f_file_extra" class="hidden" accept="image/jpeg,image/png,image/webp,.pdf" multiple>
+            <div class="dropzone-trigger" id="extraTrigger" role="button" tabindex="0">
+              📷 <strong>Click to add extra fault photos</strong> or drag &amp; drop them here (Up to 3 files)
+            </div>
+            <div class="file-list" id="extraFileList"></div>
+          </div>
+        </div>
+
+        <details class="clean-accordion" id="policiesAccordion">
+          <summary id="policiesSummary">
+            <span id="policiesSummaryText">Please Have a Quick Read of Our Warranty Terms, Packaging &amp; Service Policies</span>
+            <span class="acc-badge" id="policyBadge">Tap to Read</span>
+          </summary>
+          <div class="accordion-content">
+            <div class="terms-grid">
+              <div class="terms-block">
+                <h4>Important Notices</h4>
+                <ol>
+                  <li><b>Warranty Verification:</b> A physical inspection by MSI is required for warranty verification.</li>
+                  <li><b>3rd-Party Extended Warranties:</b> MSI cannot process claims under retailer-sold extended warranty plans (e.g., JB Hi-Fi "Extra Care" or The Good Guys "Gold Service Extras"). Products under these plans must be returned directly to the retailer.</li>
+                  <li><b>Packaging Requirements:</b> For MSI desktop products, please remove the glass side panel before packing and shipping.</li>
+                  <li><b>Motherboard Unrelated Items:</b> For MSI motherboard products, please remove all unrelated items (e.g., CPU, RAM, SSD, coolers) before packing and shipping.</li>
+                </ol>
+              </div>
+
+              <div class="terms-block">
+                <h4>Shipping &amp; Packaging Guidelines</h4>
+                <ul>
+                  <li><b>Packaging:</b> Ensure items are packaged carefully and securely. MSI is not responsible for damages incurred during transit if original packaging is not used. Use a sturdy shipping box with cushioning materials (like bubble wrap) if the original box is unavailable.</li>
+                  <li><b>Claim Submission:</b> Clearly mark your issued MSI Claim# on the front and back of the parcel. Claims will not be processed without a valid claim number issued by MSI.</li>
+                </ul>
+              </div>
+
+              <div class="terms-block">
+                <h4>Warranty, Out-of-Warranty &amp; NFF Fees</h4>
+                <ul>
+                  <li><b>Warranty Void Conditions:</b> User-induced damages (physical, impact, liquid, improper packaging, or shipping box too small) void the warranty.</li>
+                  <li><b>Out of Warranty:</b> If the unit is out of warranty or damaged, a quote will be provided upon arrival. If rejected, a cancellation/assessment fee of <b>$121.00 (incl. GST)</b> for labour and <b>$55.00 (incl. GST)</b> for return shipping applies.</li>
+                  <li><b>No Fault Found (NFF):</b> If our technicians test the unit and no hardware defect is identified, the claim may be subject to the same <b>$121.00 (incl. GST)</b> assessment fee, and a <b>$55.00 (incl. GST)</b> return shipping fee may also apply.</li>
+                </ul>
+              </div>
+
+              <div class="terms-block">
+                <h4>Estimated Repair Turnaround Time</h4>
+                <ul>
+                  <li><b>Standard Turnaround:</b> Typical repair turnaround is <b>5–10 business days</b> upon the system's arrival at our Auburn service centre, depending on local stock levels of replacement parts.</li>
+                  <li><b>Parts &amp; Workload Variations:</b> If replacement parts are required from our headquarters in Taiwan, an additional delay may occur. Our workload also consistently changes, which can affect overall turnaround times.</li>
+                </ul>
+              </div>
+
+              <div class="terms-block full-span hidden" id="dropOffPolicyBlock">
+                <h4>Onsite Visitor &amp; Quick Drop-Off / Pick-Up Policy (Applies to Local Drop-Off / Pickup Selections Only)</h4>
+                <ul>
+                  <li><b>Applicability:</b> These onsite drop-off and collection rules apply strictly to customers who have selected <b>Local Drop-off/Pickup (Auburn NSW)</b> as their shipping option.</li>
+                  <li><b>Parking:</b> Please park in front of our warehouse roller door area and refrain from parking in neighbourhood business spaces.</li>
+                  <li><b>Quick Drop-Off / Pick-Up Only:</b> Hours are Monday to Friday, 10:00 AM to 4:00 PM (excluding public holidays). Waiting onsite while claims are assessed or processed is not permitted.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <label class="agree-bar locked" id="agreeBar">
+          <div class="agree-left">
+            <input type="checkbox" id="f_agree" disabled required>
+            <span>I've read and agree to the MSI Warranty Terms and Conditions, and my details above are accurate.</span>
+          </div>
+          <span class="policy-lock-hint" id="policyLockHint">Tap Policy Accordion Above to Read</span>
+        </label>
+
+        <div class="actions">
+          <button type="submit" class="btn-primary" id="submitBtn">
+            <svg viewBox="0 0 24 24"><path d="M22 2L11 13"></path><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            <span>Submit Warranty Application &amp; Files</span>
+          </button>
+        </div>
+
+        <div class="step-nav">
+          <button type="button" class="btn-back" data-nav="back"><span class="nav-arrow">←</span> Back</button>
+        </div>
+
+        <div id="statusBox" class="status"></div>
+      </section>
+    </div>
+  </form>
+
+  <!-- Privacy Notice & Version Changelog -->
+  <footer class="privacy-footnote">
+    <div>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+      <b>Security &amp; Privacy Notice:</b> This portal is protected by strict Content Security Policy (CSP) headers and binary file verification. Non-sensitive form progress is saved only in your local tab session and is automatically wiped the moment your application is lodged.
+    </div>
+
+    <div class="version-row">
+      <div class="version-container" id="versionContainer">
+        <button type="button" class="version-trigger" id="changelogToggleBtn" aria-expanded="false" aria-controls="changelogPopup">
+          <span>v6.0 · Changelog ▾</span>
+        </button>
+
+        <div class="changelog-popup hidden" id="changelogPopup" role="region" aria-label="Version Changelog">
+          <div class="changelog-popup-header">
+            <span class="changelog-popup-title">Portal Revision Changelog</span>
+            <button type="button" class="changelog-close" id="changelogCloseBtn" aria-label="Close changelog">✕</button>
+          </div>
+          <div class="changelog-entry">
+            <div class="changelog-ver">v6.0 <span>(Current — Public Release)</span></div>
+            <ul>
+              <li>Removed static "Direct AU Service" tile in Step 1 and rebalanced the 5 product category cards into a symmetrical 3+2 grid.</li>
+              <li>Fixed transparent PNG/WEBP invoice uploads turning black during JPEG canvas compression.</li>
+              <li>Fixed Step 3 "Back" button disappearing when Out-of-Warranty or 3rd-Party Extended Warranty options are selected.</li>
+              <li>Fixed multi-step progress bar jumps silently failing when an intermediate step requires attention.</li>
+              <li>Added duplicate submission protection, 15 MB total payload guard, S/N prefix auto-cleaning, Australian phone validation, and cross-border postcode support.</li>
+            </ul>
+          </div>
+          <div class="changelog-entry">
+            <div class="changelog-ver">v5.4</div>
+            <ul>
+              <li>Hardened client security: added strict Content Security Policy (CSP), private IIFE closure encapsulation, binary magic-byte file verification, DOM XSS sanitization, and automatic session/memory wiping upon submission.</li>
+              <li>Automatic section-based file renaming: uploaded files are now automatically renamed to <b>Invoice</b>, <b>Pre-sent Monitor Photo</b>, and <b>Additional Fault Photo #</b>.</li>
+              <li>Added Component Reseller Return guidance in Step 4 advising customers they can return components to their original retailer for free shipping assistance.</li>
+              <li>Expanded Monitor &amp; AIO photo guidance explaining transit damage protection, upfront condition verification, and parts pre-checking.</li>
+            </ul>
+          </div>
+          <div class="changelog-entry">
+            <div class="changelog-ver">v5.3</div>
+            <ul>
+              <li>Added direct drag-and-drop file uploads, Google Apps Script Web App integration, Step 1 product icon grid, and celebratory confetti cannon.</li>
+            </ul>
+          </div>
+          <div class="changelog-entry">
+            <div class="changelog-ver">v5.2</div>
+            <ul>
+              <li>Moved Monitor &amp; All-in-One PC display photo instructions and visual guide to Step 5.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</main>
+
+<script>
+(() => {
+  'use strict';
+
+  const el = id => document.getElementById(id);
+  const DRAFT_KEY = 'msi_au_rma_draft_v6_0';
+  const GAS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbyj1i3HOeqobfrDK0K8b9HLSpB0Gf5Majb_zv59FZbc_rz7Vv3wWd6Jo4vvl9WhzuAR7A/exec';
+  const CLIENT_INTEGRITY_TOKEN = 'MSI-AU-RMA-V54-SECURE';
+
+  // Strict HTML sanitizer to prevent DOM XSS
+  function escapeHtml(str) {
+    return String(str ?? '').replace(/[&<>"']/g, ch => ({
+      '&': '&amp;',
+      '<': '&lt;',
+      '>': '&gt;',
+      '"': '&quot;',
+      "'": '&#39;'
+    }[ch]));
+  }
+
+  // ---------- 1. Theme Toggle ----------
+  const root = document.documentElement;
+  const sunPath = '<circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>';
+  const moonPath = '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>';
+
+  function applyTheme(theme) {
+    root.setAttribute('data-theme', theme);
+    el('themeSvg').innerHTML = theme === 'dark' ? sunPath : moonPath;
+    el('themeLabel').textContent = theme === 'dark' ? 'Light Mode' : 'Dark Mode';
+  }
+
+  el('themeToggle').addEventListener('click', () => {
+    const isDark = root.getAttribute('data-theme') === 'dark';
+    applyTheme(isDark ? 'light' : 'dark');
+    saveFormDraft();
+  });
+
+  // Password Show/Hide Toggle
+  const fPassword = el('f_password');
+  const togglePassBtn = el('togglePassBtn');
+  togglePassBtn.addEventListener('click', () => {
+    const isMasked = fPassword.type === 'password';
+    fPassword.type = isMasked ? 'text' : 'password';
+    togglePassBtn.textContent = isMasked ? 'Hide' : 'Show';
+  });
+
+  // ---------- 2. Version Changelog Pop-up Toggle ----------
+  const changelogToggleBtn = el('changelogToggleBtn');
+  const changelogPopup = el('changelogPopup');
+  const changelogCloseBtn = el('changelogCloseBtn');
+  const versionContainer = el('versionContainer');
+
+  function toggleChangelogPopup(forceState) {
+    const willOpen = typeof forceState === 'boolean' ? forceState : changelogPopup.classList.contains('hidden');
+    changelogPopup.classList.toggle('hidden', !willOpen);
+    changelogToggleBtn.setAttribute('aria-expanded', String(willOpen));
+  }
+
+  changelogToggleBtn.addEventListener('click', (e) => { e.stopPropagation(); toggleChangelogPopup(); });
+  changelogCloseBtn.addEventListener('click', (e) => { e.stopPropagation(); toggleChangelogPopup(false); });
+  document.addEventListener('click', (e) => {
+    if (!changelogPopup.classList.contains('hidden') && !versionContainer.contains(e.target)) {
+      toggleChangelogPopup(false);
+    }
+  });
+
+  // ---------- 3. Celebratory Brain-Reward Confetti Cannon ----------
+  function fireCelebrationConfetti() {
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const canvas = el('confettiCanvas');
+    const ctx = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    const colors = ['#ce2030', '#10b981', '#f59e0b', '#38bdf8', '#a855f7', '#f43f5e', '#fde047'];
+    const particles = [];
+
+    function spawnBurst(originX, originY, count, spreadAngle, baseSpeed) {
+      for (let i = 0; i < count; i++) {
+        const angle = spreadAngle + (Math.random() - 0.5) * 1.1;
+        const speed = baseSpeed * (0.55 + Math.random() * 0.75);
+        particles.push({
+          x: originX,
+          y: originY,
+          vx: Math.cos(angle) * speed,
+          vy: Math.sin(angle) * speed - 3,
+          w: 7 + Math.random() * 6,
+          h: 5 + Math.random() * 5,
+          color: colors[Math.floor(Math.random() * colors.length)],
+          rot: Math.random() * Math.PI * 2,
+          vRot: (Math.random() - 0.5) * 0.25,
+          gravity: 0.32 + Math.random() * 0.12,
+          drag: 0.985,
+          opacity: 1
+        });
+      }
+    }
+
+    spawnBurst(0, canvas.height * 0.65, 65, -Math.PI / 3, 22);
+    spawnBurst(canvas.width, canvas.height * 0.65, 65, -Math.PI * 2 / 3, 22);
+    setTimeout(() => {
+      spawnBurst(canvas.width * 0.5, canvas.height * 0.35, 80, -Math.PI / 2, 16);
+    }, 220);
+
+    const start = performance.now();
+    function animate(now) {
+      const elapsed = now - start;
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      let alive = false;
+
+      for (const p of particles) {
+        p.vx *= p.drag;
+        p.vy = p.vy * p.drag + p.gravity;
+        p.x += p.vx;
+        p.y += p.vy;
+        p.rot += p.vRot;
+        if (elapsed > 2600) p.opacity = Math.max(0, p.opacity - 0.025);
+
+        if (p.y < canvas.height + 40 && p.opacity > 0) {
+          alive = true;
+          ctx.save();
+          ctx.globalAlpha = p.opacity;
+          ctx.translate(p.x, p.y);
+          ctx.rotate(p.rot);
+          ctx.fillStyle = p.color;
+          ctx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h);
+          ctx.restore();
+        }
+      }
+
+      if (alive && elapsed < 4200) {
+        requestAnimationFrame(animate);
+      } else {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+      }
+    }
+    requestAnimationFrame(animate);
+  }
+
+  // ---------- 4. Product-Specific On-Page Serial Number (S/N) Visual Guide ----------
+  function buildBarcodeSvg(modelTitle, snSample, subNote) {
+    return `
+      <svg viewBox="0 0 320 200" role="img" aria-label="MSI Barcode Sticker Close-up showing Serial Number">
+        <rect width="320" height="200" fill="#e2e8f0"/>
+        <rect x="20" y="20" width="280" height="160" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+        <text x="34" y="44" font-family="Arial Black, Segoe UI, sans-serif" font-size="14" font-style="italic" font-weight="900" fill="#1e293b">msi</text>
+        <text x="72" y="43" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#334155">${modelTitle}</text>
+        <g fill="#0f172a">
+          <rect x="34" y="54" width="3" height="34"/><rect x="40" y="54" width="1.5" height="34"/><rect x="44" y="54" width="4" height="34"/>
+          <rect x="51" y="54" width="2" height="34"/><rect x="56" y="54" width="1.5" height="34"/><rect x="61" y="54" width="3.5" height="34"/>
+          <rect x="68" y="54" width="2" height="34"/><rect x="73" y="54" width="4" height="34"/><rect x="80" y="54" width="1.5" height="34"/>
+          <rect x="85" y="54" width="3" height="34"/><rect x="91" y="54" width="2" height="34"/><rect x="96" y="54" width="4.5" height="34"/>
+          <rect x="104" y="54" width="1.5" height="34"/><rect x="109" y="54" width="3" height="34"/><rect x="115" y="54" width="2" height="34"/>
+          <rect x="120" y="54" width="4" height="34"/><rect x="127" y="54" width="1.5" height="34"/><rect x="132" y="54" width="3" height="34"/>
+          <rect x="138" y="54" width="2.5" height="34"/><rect x="144" y="54" width="1.5" height="34"/><rect x="149" y="54" width="4" height="34"/>
+          <rect x="156" y="54" width="2" height="34"/><rect x="161" y="54" width="3" height="34"/><rect x="167" y="54" width="1.5" height="34"/>
+          <rect x="172" y="54" width="4" height="34"/><rect x="179" y="54" width="2" height="34"/><rect x="184" y="54" width="3" height="34"/>
+          <rect x="190" y="54" width="1.5" height="34"/><rect x="195" y="54" width="4" height="34"/><rect x="202" y="54" width="2" height="34"/>
+          <rect x="207" y="54" width="3.5" height="34"/><rect x="214" y="54" width="1.5" height="34"/><rect x="219" y="54" width="3" height="34"/>
+        </g>
+        <rect x="30" y="96" width="260" height="32" rx="5" fill="rgba(206, 32, 48, 0.08)" stroke="#ce2030" stroke-width="2.2"/>
+        <text x="38" y="116" font-family="Consolas, monospace" font-size="12.5" font-weight="700" fill="#0f172a">S/N: ${snSample}</text>
+        <rect x="228" y="102" width="56" height="20" rx="4" fill="#ce2030"/>
+        <text x="256" y="115.5" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#ffffff">ENTER THIS</text>
+        <text x="34" y="148" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#64748b">${subNote}</text>
+        <text x="34" y="165" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#94a3b8">Manufactured by Micro-Star Int'l Co., Ltd.</text>
+      </svg>
+    `;
+  }
+
+  const SN_CATEGORY_GUIDES = {
+    laptop: {
+      summary: 'Where to find your MSI Laptop Serial Number (S/N) — Visual Guide',
+      placeholder: 'e.g. K2401N0012345',
+      intro: 'For MSI Laptops, your Serial Number (S/N) can be found in three places:',
+      steps: [
+        '<b>1. Retail Box:</b> On the white barcode label attached to the side of the original laptop box.',
+        '<b>2. Underside of Laptop:</b> Flip your laptop over and check the barcode sticker near the bottom cover vents.',
+        '<b>3. Inside Windows (If it turns on):</b> Open <b>MSI Center</b> → click <b>Support</b> → <b>System Info</b>, or open Command Prompt and run <code>wmic bios get serialnumber</code>.'
+      ],
+      cards: [
+        {
+          title: '1. On the Retail Box',
+          svg: `<svg viewBox="0 0 320 200"><rect width="320" height="200" fill="#f1f5f9"/><polygon points="65,45 215,30 215,155 65,170" fill="#1e293b" stroke="#0f172a" stroke-width="2"/><polygon points="215,30 255,48 255,173 215,155" fill="#334155" stroke="#0f172a" stroke-width="2"/><rect x="125" y="18" width="40" height="14" rx="3" fill="none" stroke="#475569" stroke-width="3"/><text x="140" y="95" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="18" font-style="italic" fill="#ce2030">msi</text><rect x="223" y="96" width="24" height="38" rx="2" fill="#ffffff" stroke="#ce2030" stroke-width="2"/><line x1="226" y1="104" x2="244" y2="104" stroke="#0f172a" stroke-width="2"/><line x1="226" y1="116" x2="244" y2="116" stroke="#ce2030" stroke-width="2"/><circle cx="235" cy="115" r="22" fill="none" stroke="#ce2030" stroke-width="2" stroke-dasharray="4 3"/></svg>`,
+          caption: 'Check the white product label on the side edge of your original MSI laptop retail box.'
+        },
+        {
+          title: '2. On the Laptop (Underside)',
+          svg: `<svg viewBox="0 0 320 200"><rect width="320" height="200" fill="#f1f5f9"/><rect x="52" y="26" width="216" height="148" rx="10" fill="#1e293b" stroke="#0f172a" stroke-width="2"/><rect x="112" y="106" width="96" height="32" rx="3" fill="#ffffff" stroke="#ce2030" stroke-width="2.2"/><rect x="120" y="113" width="80" height="8" fill="#0f172a"/><text x="160" y="132" text-anchor="middle" font-family="Consolas, monospace" font-size="8.5" font-weight="700" fill="#ce2030">S/N: K2401N0012345</text></svg>`,
+          caption: 'Turn the laptop upside down and locate the barcode sticker on the bottom chassis cover.'
+        },
+        {
+          title: '3. Reading Your Laptop Barcode',
+          svg: buildBarcodeSvg('Katana 15 B13VFK', 'K2401N0012345', 'CHK: A1B  (Do not include the 3-digit CHK code)'),
+          caption: 'Enter the <b>S/N</b> string shown below the barcode (typically starts with <b>K</b> and contains 13–16 characters).'
+        }
+      ]
+    },
+    system: {
+      summary: 'Where to find your Desktop PC / Cubi NUC / Claw Serial Number (S/N) — Visual Guide',
+      placeholder: 'e.g. MSB938N1234567',
+      intro: 'For MSI Desktop PCs, Cubi Mini PCs, and Claw Handhelds, here is where to locate your Serial Number (S/N):',
+      steps: [
+        '<b>1. Retail Box:</b> On the white specification and barcode sticker on the side of the retail carton.',
+        '<b>2. On the Unit:</b> For <b>Desktops</b>, check the rear panel, lower side panel, or top/bottom edge of the tower. For <b>Cubi NUC</b>, check the underside of the unit. For <b>Claw Handhelds</b>, check the bottom edge of the chassis.',
+        '<b>3. Barcode Format:</b> Look for the line starting with <b>S/N</b> (usually begins with <b>MSB</b> or <b>601-</b>).'
+      ],
+      cards: [
+        {
+          title: '1. On the Retail Box',
+          svg: `<svg viewBox="0 0 320 200"><rect width="320" height="200" fill="#f1f5f9"/><polygon points="75,35 195,25 195,165 75,175" fill="#1e293b" stroke="#0f172a" stroke-width="2"/><polygon points="195,25 250,45 250,180 195,165" fill="#334155" stroke="#0f172a" stroke-width="2"/><text x="135" y="95" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="16" font-style="italic" fill="#ce2030">msi</text><rect x="208" y="102" width="30" height="42" rx="2" fill="#ffffff" stroke="#ce2030" stroke-width="2"/><circle cx="223" cy="123" r="24" fill="none" stroke="#ce2030" stroke-width="2" stroke-dasharray="4 3"/></svg>`,
+          caption: 'Located on the outer carton side panel label.'
+        },
+        {
+          title: '2. On the Desktop / Cubi / Claw',
+          svg: `<svg viewBox="0 0 320 200"><rect width="320" height="200" fill="#f1f5f9"/><rect x="45" y="24" width="95" height="152" rx="6" fill="#1e293b" stroke="#0f172a" stroke-width="2"/><rect x="55" y="136" width="60" height="24" rx="2" fill="#ffffff" stroke="#ce2030" stroke-width="2"/><text x="85" y="151" text-anchor="middle" font-family="Consolas, monospace" font-size="7.5" font-weight="700" fill="#ce2030">S/N Sticker</text><rect x="168" y="54" width="112" height="62" rx="18" fill="#1e293b" stroke="#0f172a" stroke-width="2"/><rect x="202" y="108" width="44" height="10" rx="2" fill="#ffffff" stroke="#ce2030" stroke-width="2"/><text x="224" y="134" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" font-weight="700" fill="#334155">Claw Bottom / Cubi Base</text></svg>`,
+          caption: 'Check the rear/side panel of Desktop towers, the base of Cubi NUC, or the bottom edge of Claw handhelds.'
+        },
+        {
+          title: '3. Reading Your System Barcode',
+          svg: buildBarcodeSvg('MAG Infinite S3 / Claw A1M', 'MSB938N1234567', 'CHK: 89C  (Only enter the S/N characters)'),
+          caption: 'Enter the <b>S/N</b> string shown on the sticker (typically starts with <b>MSB</b>).'
+        }
+      ]
+    },
+    monitor: {
+      summary: 'Where to find your MSI Monitor Serial Number (S/N) — Visual Guide',
+      placeholder: 'e.g. FA5T012345678 or MA4M01234567',
+      intro: 'For MSI Monitors, your Serial Number (S/N) is located in two places:',
+      steps: [
+        '<b>1. Rear Casing of the Monitor:</b> Look on the back of your monitor near the HDMI / DisplayPort / power input ports.',
+        '<b>2. Original Monitor Box:</b> Check the white barcode sticker on the side of the retail box.',
+        '<b>3. Barcode Format:</b> Look for the 13-character alphanumeric string next to <b>S/N</b>.'
+      ],
+      cards: [
+        {
+          title: '1. On the Monitor Box',
+          svg: `<svg viewBox="0 0 320 200"><rect width="320" height="200" fill="#f1f5f9"/><polygon points="55,40 215,28 215,158 55,170" fill="#1e293b" stroke="#0f172a" stroke-width="2"/><polygon points="215,28 258,44 258,172 215,158" fill="#334155" stroke="#0f172a" stroke-width="2"/><text x="135" y="98" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="17" font-style="italic" fill="#ce2030">msi</text><rect x="224" y="94" width="26" height="40" rx="2" fill="#ffffff" stroke="#ce2030" stroke-width="2"/><circle cx="237" cy="114" r="22" fill="none" stroke="#ce2030" stroke-width="2" stroke-dasharray="4 3"/></svg>`,
+          caption: 'Check the white barcode label on the narrow side panel of your monitor box.'
+        },
+        {
+          title: '2. On the Back of the Monitor',
+          svg: `<svg viewBox="0 0 320 200"><rect width="320" height="200" fill="#f1f5f9"/><rect x="50" y="22" width="220" height="126" rx="6" fill="#1e293b" stroke="#0f172a" stroke-width="2"/><rect x="144" y="92" width="32" height="74" rx="3" fill="#0f172a"/><rect x="105" y="164" width="110" height="10" rx="5" fill="#0f172a"/><rect x="184" y="110" width="72" height="28" rx="3" fill="#ffffff" stroke="#ce2030" stroke-width="2.2"/><text x="220" y="129" text-anchor="middle" font-family="Consolas, monospace" font-size="7.5" font-weight="700" fill="#ce2030">S/N Sticker</text><circle cx="220" cy="124" r="42" fill="none" stroke="#ce2030" stroke-width="2" stroke-dasharray="4 3"/></svg>`,
+          caption: 'Look at the rear casing near the video/power ports or underneath the lower rear lip.'
+        },
+        {
+          title: '3. Reading Your Monitor Barcode',
+          svg: buildBarcodeSvg('MPG 321URX QD-OLED', 'FA5T012345678', '13-character S/N located directly under the barcode'),
+          caption: 'Enter the 13-character <b>S/N</b> printed on the barcode sticker.'
+        }
+      ]
+    },
+    aio: {
+      summary: 'Where to find your MSI All-in-One (AIO) PC Serial Number (S/N) — Visual Guide',
+      placeholder: 'e.g. MSAC01N1234567',
+      intro: 'For MSI All-in-One (AIO) Computers, your Serial Number (S/N) is located here:',
+      steps: [
+        '<b>1. Rear / Underside of the Display:</b> Check the back of the All-in-One chassis near the rear I/O ports or along the bottom edge of the bezel.',
+        '<b>2. Retail Box:</b> Check the white barcode label on the side of the original box.',
+        '<b>3. Barcode Format:</b> Look for the string next to <b>S/N</b> (commonly starts with <b>MSA</b> or <b>MSB</b>).'
+      ],
+      cards: [
+        {
+          title: '1. On the AIO Retail Box',
+          svg: `<svg viewBox="0 0 320 200"><rect width="320" height="200" fill="#f1f5f9"/><polygon points="55,38 215,26 215,160 55,172" fill="#1e293b" stroke="#0f172a" stroke-width="2"/><polygon points="215,26 258,44 258,174 215,160" fill="#334155" stroke="#0f172a" stroke-width="2"/><text x="135" y="96" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="16" font-style="italic" fill="#ffffff">PRO Series</text><rect x="224" y="96" width="26" height="40" rx="2" fill="#ffffff" stroke="#ce2030" stroke-width="2"/><circle cx="237" cy="116" r="22" fill="none" stroke="#ce2030" stroke-width="2" stroke-dasharray="4 3"/></svg>`,
+          caption: 'Found on the side panel label of the original All-in-One PC box.'
+        },
+        {
+          title: '2. On the All-in-One PC',
+          svg: `<svg viewBox="0 0 320 200"><rect width="320" height="200" fill="#f1f5f9"/><rect x="50" y="22" width="220" height="126" rx="6" fill="#1e293b" stroke="#0f172a" stroke-width="2"/><rect x="142" y="95" width="36" height="70" rx="3" fill="#334155"/><rect x="100" y="163" width="120" height="10" rx="5" fill="#0f172a"/><rect x="74" y="114" width="62" height="24" rx="3" fill="#ffffff" stroke="#ce2030" stroke-width="2.2"/><text x="105" y="130" text-anchor="middle" font-family="Consolas, monospace" font-size="7" font-weight="700" fill="#ce2030">S/N Sticker</text><circle cx="105" cy="126" r="36" fill="none" stroke="#ce2030" stroke-width="2" stroke-dasharray="4 3"/></svg>`,
+          caption: 'Located on the rear panel near the I/O ports or underneath the bottom bezel.'
+        },
+        {
+          title: '3. Reading Your AIO Barcode',
+          svg: buildBarcodeSvg('PRO AP272P 14M', 'MSAC01N1234567', 'CHK: D4E  (Only enter the S/N characters)'),
+          caption: 'Enter the <b>S/N</b> string printed on the sticker (usually starts with <b>MSA</b> or <b>MSB</b>).'
+        }
+      ]
+    },
+    component: {
+      summary: 'Where to find your PC Component / Gaming Gear Serial Number (S/N) — Visual Guide',
+      placeholder: 'e.g. 601-7E06-010B2401001234',
+      hasSubtabs: true
+    }
+  };
+
+  const COMPONENT_SUB_GUIDES = {
+    mb: {
+      label: 'Motherboards',
+      intro: 'For MSI Motherboards, the Serial Number (S/N) is located on the 24-pin ATX power connector and the retail box:',
+      cards: [
+        {
+          title: '1. On the Motherboard Box',
+          svg: `<svg viewBox="0 0 320 200"><rect width="320" height="200" fill="#f1f5f9"/><polygon points="60,40 210,28 210,155 60,168" fill="#1e293b" stroke="#0f172a" stroke-width="2"/><polygon points="210,28 255,46 255,172 210,155" fill="#334155" stroke="#0f172a" stroke-width="2"/><text x="135" y="96" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="16" font-style="italic" fill="#ce2030">MAG / MPG</text><rect x="220" y="94" width="28" height="40" rx="2" fill="#ffffff" stroke="#ce2030" stroke-width="2"/><circle cx="234" cy="114" r="22" fill="none" stroke="#ce2030" stroke-width="2" stroke-dasharray="4 3"/></svg>`,
+          caption: 'Check the white barcode sticker on the side of your motherboard retail box.'
+        },
+        {
+          title: '2. On the 24-Pin ATX Connector',
+          svg: `<svg viewBox="0 0 320 200"><rect width="320" height="200" fill="#f1f5f9"/><rect x="55" y="18" width="180" height="164" rx="6" fill="#0f172a" stroke="#334155" stroke-width="2"/><rect x="115" y="48" width="52" height="52" rx="4" fill="#334155"/><rect x="216" y="54" width="16" height="64" rx="2" fill="#ffffff" stroke="#ce2030" stroke-width="2.2"/><circle cx="224" cy="86" r="32" fill="none" stroke="#ce2030" stroke-width="2" stroke-dasharray="4 3"/><text x="275" y="82" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" font-weight="700" fill="#ce2030">24-Pin ATX</text></svg>`,
+          caption: 'Look on the side of the <b>24-pin ATX power connector</b> (JPWR1) on the motherboard itself.'
+        },
+        {
+          title: '3. Reading Your Motherboard S/N',
+          svg: buildBarcodeSvg('MAG B650 TOMAHAWK WIFI', '601-7D75-010B2401001234', 'Starts with 601- followed by model & production digits'),
+          caption: 'Enter the full <b>S/N</b> starting with <b>601-</b>.'
+        }
+      ]
+    },
+    gpu: {
+      label: 'Graphics Cards (GPU)',
+      intro: 'For MSI Graphics Cards, the Serial Number (S/N) is on the GPU backplate (or rear PCB near the PCIe gold fingers) and the box:',
+      cards: [
+        {
+          title: '1. On the Graphics Card Box',
+          svg: `<svg viewBox="0 0 320 200"><rect width="320" height="200" fill="#f1f5f9"/><polygon points="55,44 215,32 215,154 55,166" fill="#1e293b" stroke="#0f172a" stroke-width="2"/><polygon points="215,32 258,48 258,170 215,154" fill="#334155" stroke="#0f172a" stroke-width="2"/><text x="135" y="98" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="15" font-style="italic" fill="#10b981">GEFORCE RTX</text><rect x="223" y="96" width="28" height="38" rx="2" fill="#ffffff" stroke="#ce2030" stroke-width="2"/><circle cx="237" cy="115" r="22" fill="none" stroke="#ce2030" stroke-width="2" stroke-dasharray="4 3"/></svg>`,
+          caption: 'Located on the outer side flap of the retail graphics card box.'
+        },
+        {
+          title: '2. On the GPU Backplate',
+          svg: `<svg viewBox="0 0 320 200"><rect width="320" height="200" fill="#f1f5f9"/><rect x="44" y="42" width="232" height="104" rx="6" fill="#1e293b" stroke="#0f172a" stroke-width="2"/><rect x="75" y="146" width="110" height="10" rx="2" fill="#eab308"/><rect x="76" y="88" width="92" height="32" rx="3" fill="#ffffff" stroke="#ce2030" stroke-width="2.2"/><text x="122" y="109" text-anchor="middle" font-family="Consolas, monospace" font-size="7.5" font-weight="700" fill="#ce2030">S/N: 602-V513-...</text></svg>`,
+          caption: 'Check the metal backplate (or rear PCB above the golden PCIe connector).'
+        },
+        {
+          title: '3. Reading Your GPU Barcode',
+          svg: buildBarcodeSvg('RTX 4070 Ti SUPER GAMING X', '602-V513-01SB2401001234', 'Starts with 602-V... (Do not enter the 3-digit CHK)'),
+          caption: 'Enter the full <b>S/N</b> starting with <b>602-</b>.'
+        }
+      ]
+    },
+    other: {
+      label: 'PSU / Cooler / SSD / Case / Gear',
+      intro: 'For PSUs, Liquid Coolers, SSDs, Cases, and Gaming Gear (Mice, Keyboards, Headsets, Controllers):',
+      cards: [
+        {
+          title: '1. PSU, Liquid Cooler & SSD',
+          svg: `<svg viewBox="0 0 320 200"><rect width="320" height="200" fill="#f1f5f9"/><rect x="24" y="42" width="120" height="96" rx="6" fill="#1e293b" stroke="#0f172a" stroke-width="2"/><text x="84" y="66" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" font-weight="700" fill="#94a3b8">PSU / AIO Radiator</text><rect x="44" y="82" width="80" height="32" rx="3" fill="#ffffff" stroke="#ce2030" stroke-width="2"/><text x="84" y="102" text-anchor="middle" font-family="Consolas, monospace" font-size="8" font-weight="700" fill="#ce2030">S/N Sticker</text><rect x="168" y="68" width="128" height="44" rx="4" fill="#0f172a" stroke="#334155" stroke-width="2"/><rect x="182" y="76" width="96" height="28" rx="2" fill="#ffffff" stroke="#ce2030" stroke-width="2"/><text x="230" y="94" text-anchor="middle" font-family="Consolas, monospace" font-size="8" font-weight="700" fill="#ce2030">SSD Back Sticker</text></svg>`,
+          caption: '<b>PSU:</b> Top/side housing. <b>Cooler:</b> Outer flat side of radiator. <b>SSD:</b> Sticker on the drive or box.'
+        },
+        {
+          title: '2. Gaming Gear & PC Cases',
+          svg: `<svg viewBox="0 0 320 200"><rect width="320" height="200" fill="#f1f5f9"/><rect x="28" y="38" width="130" height="72" rx="6" fill="#1e293b" stroke="#0f172a" stroke-width="2"/><rect x="60" y="60" width="66" height="26" rx="2" fill="#ffffff" stroke="#ce2030" stroke-width="2"/><text x="93" y="77" text-anchor="middle" font-family="Consolas, monospace" font-size="7.5" font-weight="700" fill="#ce2030">Underside S/N</text><path d="M190,145 Q230,115 285,145" fill="none" stroke="#334155" stroke-width="5"/><rect x="215" y="78" width="70" height="36" rx="3" fill="#ffffff" stroke="#ce2030" stroke-width="2"/><text x="250" y="99" text-anchor="middle" font-family="Consolas, monospace" font-size="7.5" font-weight="700" fill="#ce2030">Cable Tag S/N</text></svg>`,
+          caption: '<b>Keyboards/Mice:</b> Underside label. <b>Headsets:</b> Tag on the cable or inside headband. <b>Cases:</b> Rear/bottom panel.'
+        },
+        {
+          title: '3. Reading Your Component Barcode',
+          svg: buildBarcodeSvg('MPG A850G PCIE5 / GM41', '306-7ZP8A11-CE0123456789', 'Enter the S/N string printed beneath the barcode'),
+          caption: 'Enter the full <b>S/N</b> string shown on the product or retail box sticker.'
+        }
+      ]
+    }
+  };
+
+  let currentCompSubTab = 'mb';
+
+  function renderSnCardsGrid(cards) {
+    return `
+      <div class="sn-guide-grid">
+        ${cards.map(c => `
+          <div class="guide-card">
+            <div class="guide-header msi">${c.title}</div>
+            <div class="guide-stage">${c.svg}</div>
+            <div class="guide-caption">${c.caption}</div>
+          </div>
+        `).join('')}
+      </div>
+      <div class="sn-tip-bar">
+        <b>Tip when typing your S/N:</b> Please pay close attention to the difference between the number <b>0</b> (zero) and the letter <b>O</b>, and between the number <b>1</b> and the letter <b>I</b>. Only enter the Serial Number (you do not need to include the 3-digit CHK code).
+      </div>
+    `;
+  }
+
+  function updateSnGuideUI() {
+    const cat = el('f_category').value || 'laptop';
+    const container = el('snGuideDynamicContent');
+    const summaryTitle = el('snGuideSummaryTitle');
+    const fBarcode = el('f_barcode');
+    const config = SN_CATEGORY_GUIDES[cat] || SN_CATEGORY_GUIDES.laptop;
+    summaryTitle.textContent = config.summary;
+    fBarcode.placeholder = config.placeholder;
+
+    if (cat === 'component') {
+      const sub = COMPONENT_SUB_GUIDES[currentCompSubTab] || COMPONENT_SUB_GUIDES.mb;
+      container.innerHTML = `
+        <p style="margin:0 0 6px;color:var(--text)">Select your component type below to see where its Serial Number (S/N) is located:</p>
+        <div class="sn-subtabs">
+          ${Object.entries(COMPONENT_SUB_GUIDES).map(([key, item]) => `
+            <button type="button" class="sn-subtab ${key === currentCompSubTab ? 'active' : ''}" data-sn-sub="${key}">${item.label}</button>
+          `).join('')}
+        </div>
+        <p style="margin:0 0 8px">${sub.intro}</p>
+        ${renderSnCardsGrid(sub.cards)}
+      `;
+      container.querySelectorAll('[data-sn-sub]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          currentCompSubTab = btn.getAttribute('data-sn-sub');
+          updateSnGuideUI();
+        });
+      });
+    } else {
+      container.innerHTML = `
+        <p style="margin:0 0 8px;color:var(--text)">${config.intro}</p>
+        <ul style="margin:0 0 10px;padding-left:18px">${config.steps.map(s => `<li style="margin-bottom:4px">${s}</li>`).join('')}</ul>
+        ${renderSnCardsGrid(config.cards)}
+      `;
+    }
+  }
+
+  // ---------- 5. Step 1 Visual Category Cards & Conditional UI ----------
+  const fCategory = el('f_category');
+  const fAmazon = el('f_amazon');
+  const amazonGateField = el('amazonGateField');
+  const amazonBlocker = el('amazonBlocker');
+  const displayPhotoBanner = el('displayPhotoBanner');
+  const displayDropCard = el('displayDropCard');
+  const step1Nav = el('step1Nav');
+  const displayDamageNotice = el('displayDamageNotice');
+  const systemCredentialsSection = el('systemCredentialsSection');
+  const fReset = el('f_reset');
+  const resetNoWarningInline = el('resetNoWarningInline');
+  const shippingNoticeCovered = el('shippingNoticeCovered');
+  const shippingNoticeComponent = el('shippingNoticeComponent');
+  const cardAusPost = el('cardAusPost');
+  const cardStarTrack = el('cardStarTrack');
+  const cardSelfPost = el('cardSelfPost');
+  const radioAusPost = el('radioAusPost');
+  const radioStarTrack = el('radioStarTrack');
+  const radioDropOff = el('radioDropOff');
+  const radioSelfPost = el('radioSelfPost');
+  const dropOffPolicyBlock = el('dropOffPolicyBlock');
+
+  const CATEGORY_LABELS = {
+    laptop: 'Laptop',
+    system: 'Desktop PC / Cubi NUC / Claw Handheld',
+    monitor: 'Monitor',
+    aio: 'All-in-One (AIO) PC',
+    component: 'PC Component / Gaming Gear'
+  };
+
+  const WARRANTY_STATUS_LABELS = {
+    YES: 'Yes — Under MSI Manufacturer Warranty',
+    NO: 'No — Out of Warranty (Paid Estimate Requested)',
+    UNSURE: 'Unsure — Please Verify Against Attached Tax Invoice',
+    EXTENDED_3RD_PARTY: '3rd-Party Retailer Extended Warranty'
+  };
+
+  function syncCategoryVisualCards() {
+    const currentCat = fCategory.value;
+    document.querySelectorAll('.cat-card[data-cat-val]').forEach(card => {
+      const isSelected = card.getAttribute('data-cat-val') === currentCat;
+      card.classList.toggle('active', isSelected);
+      card.setAttribute('aria-checked', String(isSelected));
+    });
+    const currentAmz = fAmazon.value;
+    document.querySelectorAll('[data-amz-choice]').forEach(btn => {
+      btn.classList.toggle('active', btn.getAttribute('data-amz-choice') === currentAmz);
+    });
+  }
+
+  document.querySelectorAll('.cat-card[data-cat-val]').forEach(card => {
+    card.addEventListener('click', () => {
+      const val = card.getAttribute('data-cat-val');
+      if (fCategory.value !== val) {
+        fCategory.value = val;
+        fAmazon.value = '';
+      }
+      updateCategoryUI();
+      saveFormDraft();
+    });
+    card.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        card.click();
+      }
+    });
+  });
+
+  document.querySelectorAll('[data-amz-choice]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      fAmazon.value = btn.getAttribute('data-amz-choice');
+      updateCategoryUI();
+      saveFormDraft();
+    });
+  });
+
+  function updateDropOffPolicyVisibility() {
+    dropOffPolicyBlock.classList.toggle('hidden', !radioDropOff.checked);
+  }
+
+  document.querySelectorAll('input[name="Return Shipping Preference"]').forEach(radio => {
+    radio.addEventListener('change', () => {
+      updateDropOffPolicyVisibility();
+      updateRewardProgress();
+      saveFormDraft();
+    });
+  });
+
+  function updateCategoryUI() {
+    const cat = fCategory.value;
+    const amz = fAmazon.value;
+
+    syncCategoryVisualCards();
+    amazonGateField.classList.add('hidden');
+    amazonBlocker.classList.add('hidden');
+    displayPhotoBanner.classList.add('hidden');
+    displayDropCard.classList.add('hidden');
+    step1Nav.classList.add('hidden');
+    fAmazon.required = false;
+
+    updateSnGuideUI();
+
+    if (!cat) {
+      updateRewardProgress();
+      return;
+    }
+
+    if (cat === 'monitor' || cat === 'component') {
+      document.body.setAttribute('data-amz', cat);
+      amazonGateField.classList.remove('hidden');
+      fAmazon.required = true;
+      if (amz === 'yes') {
+        amazonBlocker.classList.remove('hidden');
+      } else if (amz === 'no') {
+        step1Nav.classList.remove('hidden');
+      }
+    } else {
+      fAmazon.value = '';
+      step1Nav.classList.remove('hidden');
+    }
+
+    const isDisplay = (cat === 'monitor' || cat === 'aio');
+    const isSystem = (cat === 'aio' || cat === 'laptop' || cat === 'system');
+
+    displayPhotoBanner.classList.toggle('hidden', !isDisplay);
+    displayDropCard.classList.toggle('hidden', !isDisplay);
+    displayDamageNotice.classList.toggle('hidden', !isDisplay);
+    systemCredentialsSection.classList.toggle('hidden', !isSystem);
+    fReset.required = isSystem;
+
+    const isComponent = (cat === 'component');
+    shippingNoticeCovered.classList.toggle('hidden', isComponent);
+    shippingNoticeComponent.classList.toggle('hidden', !isComponent);
+    cardAusPost.classList.toggle('hidden', isComponent);
+    cardStarTrack.classList.toggle('hidden', isComponent);
+    cardSelfPost.classList.toggle('hidden', !isComponent);
+
+    if (isComponent && (radioAusPost.checked || radioStarTrack.checked)) {
+      radioAusPost.checked = false;
+      radioStarTrack.checked = false;
+    } else if (!isComponent && radioSelfPost.checked) {
+      radioSelfPost.checked = false;
+    }
+
+    updateDropOffPolicyVisibility();
+    checkRegionalLaptopPartners(false);
+    updateWarrantyStatusUI(false);
+    updateRewardProgress();
+  }
+
+  // ---------- 6. Step 2 & Step 3 Modals ----------
+  const fOwner = el('f_owner');
+  const ownerModal = el('ownerModal');
+  const leaderModal = el('leaderModal');
+  const centrecomModal = el('centrecomModal');
+  const resetNoModal = el('resetNoModal');
+  const warrantyModal = el('warrantyModal');
+  const submitSuccessModal = el('submitSuccessModal');
+  const ownerWarningInline = el('ownerWarningInline');
+  const leaderWaInline = el('leaderWaInline');
+  const centrecomVicInline = el('centrecomVicInline');
+  const fWarrantyStatus = el('f_warranty_status');
+  const warrantyStatusInline = el('warrantyStatusInline');
+  const step3Nav = el('step3Nav');
+  const step3NextBtn = el('step3NextBtn');
+  const faultFieldContainer = el('faultFieldContainer');
+
+  fOwner.addEventListener('change', () => {
+    const isSecondHand = fOwner.value === 'NO';
+    ownerWarningInline.classList.toggle('hidden', !isSecondHand);
+    if (isSecondHand) ownerModal.classList.remove('hidden');
+    saveFormDraft();
+  });
+
+  fReset.addEventListener('change', () => {
+    const isResetDeclined = fReset.value === 'No';
+    resetNoWarningInline.classList.toggle('hidden', !isResetDeclined);
+    if (isResetDeclined) resetNoModal.classList.remove('hidden');
+    saveFormDraft();
+  });
+
+  function isStrictNoOowCategory() {
+    const cat = fCategory.value;
+    return (cat === 'monitor' || cat === 'component');
+  }
+
+  function updateWarrantyStatusUI(showPopup) {
+    const val = fWarrantyStatus.value;
+    const modalCard = el('warrantyModalCard');
+    const modalIcon = el('warrantyModalIcon');
+    const modalTitle = el('warrantyModalTitle');
+    const modalBody = el('warrantyModalBody');
+    const thirdPartyBox = el('warrantyModalThirdPartyBox');
+
+    fWarrantyStatus.setCustomValidity('');
+    modalCard.className = 'modal-card warn-card';
+    modalIcon.className = 'modal-icon warn-icon';
+
+    step3Nav.classList.remove('hidden');
+    step3NextBtn.classList.remove('hidden');
+    step3NextBtn.disabled = false;
+    faultFieldContainer.classList.remove('hidden');
+
+    if (val === 'NO') {
+      if (isStrictNoOowCategory()) {
+        const catWord = fCategory.value === 'monitor' ? 'monitors' : 'PC components and gaming gear';
+        step3NextBtn.classList.add('hidden');
+        step3NextBtn.disabled = true;
+        faultFieldContainer.classList.add('hidden');
+
+        warrantyStatusInline.classList.remove('hidden');
+        warrantyStatusInline.innerHTML = `
+          <div class="warn-inline error-inline" style="display:block">
+            <b>Out-of-Warranty Lodgement Unavailable:</b> For MSI ${catWord}, out-of-warranty repairs are not performed (even on a paid assessment basis) as the cost of replacement parts and labour exceeds the cost of a brand new unit. If you believe your product was purchased within its warranty period, please update your selection to "Yes" or "Unsure".
+          </div>
+        `;
+        if (showPopup) {
+          modalCard.className = 'modal-card stop-card';
+          modalIcon.className = 'modal-icon stop-icon';
+          modalTitle.textContent = 'Out-of-Warranty Service Not Available';
+          modalBody.innerHTML = `<p>We're sorry, but for MSI ${catWord}, out-of-warranty repairs are not performed, even on a paid basis.</p><p>If you believe your product is still within its manufacturer warranty timeframe, please select "Yes" or "Unsure" and upload your retailer tax invoice in Step 5 so our team can check eligibility.</p>`;
+          thirdPartyBox.classList.add('hidden');
+          warrantyModal.classList.remove('hidden');
+        }
+      } else {
+        warrantyStatusInline.classList.remove('hidden');
+        warrantyStatusInline.innerHTML = `
+          <div class="warn-inline" style="display:block">
+            <b>Out-of-Warranty Repair Quotations:</b> We can provide an estimated quotation for repair after your application has been received. Feel free to upload photos of the issue in Step 5 so we can prepare an accurate estimate.
+          </div>
+        `;
+        if (showPopup) {
+          modalTitle.textContent = 'Out-of-Warranty Repair Quotations';
+          modalBody.innerHTML = `<p>No problem — we can provide you with an estimated quotation for the repair after your application has been sent to us.</p><p>You can also upload clear photos of the issue in Step 5 so our team can give you an accurate estimation.</p>`;
+          thirdPartyBox.classList.remove('hidden');
+          warrantyModal.classList.remove('hidden');
+        }
+      }
+    } else if (val === 'UNSURE') {
+      warrantyStatusInline.classList.remove('hidden');
+      warrantyStatusInline.innerHTML = `
+        <div class="warn-inline" style="display:block">
+          <b>We'll Verify Your Warranty Coverage:</b> Once your application is submitted, our team will review the tax invoice you upload in Step 5 against our records to confirm your warranty status.
+        </div>
+      `;
+      if (showPopup) {
+        modalTitle.textContent = "Not Sure If It's Under Warranty?";
+        modalBody.innerHTML = `<p>After your application is submitted, our team will review the tax invoice you upload in Step 5 to confirm your warranty coverage.</p><p>If your product is no longer under MSI manufacturer warranty, we will inform you and provide an estimated quote or next steps.</p>`;
+        thirdPartyBox.classList.remove('hidden');
+        warrantyModal.classList.remove('hidden');
+      }
+    } else if (val === 'EXTENDED_3RD_PARTY') {
+      step3NextBtn.classList.add('hidden');
+      step3NextBtn.disabled = true;
+      warrantyStatusInline.classList.remove('hidden');
+      warrantyStatusInline.innerHTML = `
+        <div class="warn-inline error-inline" style="display:block">
+          <b>Please Return Directly to Your Retailer:</b> If you purchased a 3rd-party extended warranty from your reseller (such as JB Hi-Fi "Extra Care" or The Good Guys "Gold Service Extras"), please return the product directly to the store for assistance under their policy.
+        </div>
+      `;
+      if (showPopup) {
+        modalCard.className = 'modal-card stop-card';
+        modalIcon.className = 'modal-icon stop-icon';
+        modalTitle.textContent = '3rd-Party Retailer Extended Warranties';
+        modalBody.innerHTML = `<p>If you purchased a 3rd-party extended warranty from your reseller (such as JB Hi-Fi "Extra Care" or The Good Guys "Gold Service Extras"), please return the product directly to the store for assistance under their policy.</p><p>MSI is unable to process claims or provide replacements under retailer extended warranty policies.</p>`;
+        thirdPartyBox.classList.add('hidden');
+        warrantyModal.classList.remove('hidden');
+      }
+    } else {
+      warrantyStatusInline.classList.add('hidden');
+      warrantyStatusInline.innerHTML = '';
+    }
+  }
+
+  fWarrantyStatus.addEventListener('change', () => {
+    updateWarrantyStatusUI(true);
+    saveFormDraft();
+  });
+
+  [
+    ['closeOwnerModalBtn', ownerModal],
+    ['closeLeaderModalBtn', leaderModal],
+    ['closeCentrecomModalBtn', centrecomModal],
+    ['closeResetNoModalBtn', resetNoModal],
+    ['closeWarrantyModalBtn', warrantyModal],
+    ['closeSubmitModalBtn', submitSuccessModal]
+  ].forEach(([btnId, modalEl]) => {
+    el(btnId).addEventListener('click', () => modalEl.classList.add('hidden'));
+    modalEl.addEventListener('click', (e) => {
+      if (e.target === modalEl) modalEl.classList.add('hidden');
+    });
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      [ownerModal, leaderModal, centrecomModal, resetNoModal, warrantyModal, submitSuccessModal].forEach(m => m.classList.add('hidden'));
+      toggleChangelogPopup(false);
+    }
+  });
+
+  // PO Box / Parcel Locker validation
+  const poBoxRegex = /\b(p\.?\s*o\.?\s*box|post\s*office\s*box|parcel\s*locker|parcel\s*collect|locked\s*bag|gpo\s*box|cmb)\b/i;
+  ['f_unit', 'f_streetNumber', 'f_streetName', 'f_suburb'].forEach(id => {
+    const input = el(id);
+    input.addEventListener('input', () => {
+      if (poBoxRegex.test(input.value)) {
+        input.setCustomValidity("Sorry, we can't ship to PO Boxes or Parcel Lockers. Please enter your physical street address.");
+      } else {
+        input.setCustomValidity('');
+      }
+    });
+  });
+
+  // Australian State <-> Postcode Cross-Validation & Regional Laptop Partner Checks
+  const fState = el('f_state');
+  const fPostcode = el('f_postcode');
+
+  const STATE_POSTCODE_RANGES = {
+    NSW: [[1000, 2599], [2611, 2611], [2619, 2899], [2921, 2999], [3585, 3586], [3644, 3644], [4380, 4380], [4383, 4383]],
+    ACT: [[200, 299], [2540, 2540], [2600, 2620], [2900, 2920]],
+    VIC: [[3000, 3999], [8000, 8999]],
+    QLD: [[2406, 2406], [4000, 4999], [9000, 9999]],
+    SA:  [[872, 872], [5000, 5999]],
+    WA:  [[872, 872], [6000, 6999]],
+    TAS: [[7000, 7999]],
+    NT:  [[800, 999]]
+  };
+
+  // Australian phone & Serial Number validation
+  const fPhoneInput = el('f_phone');
+  fPhoneInput.addEventListener('input', () => {
+    const digits = fPhoneInput.value.replace(/\D/g, '');
+    if (digits.length > 0 && (digits.length < 8 || digits.length > 15)) {
+      fPhoneInput.setCustomValidity('Please enter a valid Australian daytime phone or mobile number (at least 8 digits).');
+    } else {
+      fPhoneInput.setCustomValidity('');
+    }
+  });
+
+  const fBarcodeInput = el('f_barcode');
+  fBarcodeInput.addEventListener('blur', () => {
+    fBarcodeInput.value = fBarcodeInput.value.trim().replace(/^(s\/?n\s*[:\-]?\s*)/i, '').toUpperCase();
+  });
+  fBarcodeInput.addEventListener('input', () => {
+    const cleaned = fBarcodeInput.value.trim().replace(/^(s\/?n\s*[:\-]?\s*)/i, '');
+    if (cleaned.length > 0 && cleaned.length < 6) {
+      fBarcodeInput.setCustomValidity('Please enter your complete MSI Serial Number (at least 6 characters).');
+    } else {
+      fBarcodeInput.setCustomValidity('');
+    }
+  });
+
+  const LEADER_WA_50KM_POSTCODE_RANGES = [[6000, 6038], [6050, 6090], [6100, 6126], [6147, 6176], [6180, 6180]];
+  const CENTRECOM_VIC_50KM_POSTCODE_RANGES = [[3000, 3210], [3335, 3340], [3427, 3429], [3750, 3815], [3910, 3944], [3975, 3981], [8000, 8999]];
+  let lastPromptedPartnerKey = '';
+
+  function isNearLeaderComputersWA() {
+    if (fCategory.value !== 'laptop' || fState.value !== 'WA') return false;
+    const pcStr = fPostcode.value.trim();
+    if (!/^\d{4}$/.test(pcStr)) return false;
+    const pcNum = parseInt(pcStr, 10);
+    return LEADER_WA_50KM_POSTCODE_RANGES.some(([min, max]) => pcNum >= min && pcNum <= max);
+  }
+
+  function isNearCentreComVIC() {
+    if (fCategory.value !== 'laptop' || fState.value !== 'VIC') return false;
+    const pcStr = fPostcode.value.trim();
+    if (!/^\d{4}$/.test(pcStr)) return false;
+    const pcNum = parseInt(pcStr, 10);
+    return CENTRECOM_VIC_50KM_POSTCODE_RANGES.some(([min, max]) => pcNum >= min && pcNum <= max);
+  }
+
+  function checkRegionalLaptopPartners(allowPopup) {
+    const isNearWA = isNearLeaderComputersWA();
+    const isNearVIC = isNearCentreComVIC();
+    leaderWaInline.classList.toggle('hidden', !isNearWA);
+    centrecomVicInline.classList.toggle('hidden', !isNearVIC);
+    if (!allowPopup) return;
+    const key = `${fCategory.value}_${fState.value}_${fPostcode.value.trim()}`;
+    if (isNearWA && lastPromptedPartnerKey !== key) {
+      lastPromptedPartnerKey = key;
+      leaderModal.classList.remove('hidden');
+    } else if (isNearVIC && lastPromptedPartnerKey !== key) {
+      lastPromptedPartnerKey = key;
+      centrecomModal.classList.remove('hidden');
+    }
+  }
+
+  function validateStatePostcode() {
+    const state = fState.value;
+    const pcStr = fPostcode.value.trim();
+    if (!/^\d{4}$/.test(pcStr) || !state) {
+      fPostcode.setCustomValidity('');
+      return;
+    }
+    const pcNum = parseInt(pcStr, 10);
+    const ranges = STATE_POSTCODE_RANGES[state] || [];
+    const matches = ranges.some(([min, max]) => pcNum >= min && pcNum <= max);
+    fPostcode.setCustomValidity(matches ? '' : `Postcode ${pcStr} doesn't match ${state}. Please check your state or postcode.`);
+  }
+
+  fState.addEventListener('change', () => { validateStatePostcode(); checkRegionalLaptopPartners(true); saveFormDraft(); });
+  fPostcode.addEventListener('input', () => { validateStatePostcode(); checkRegionalLaptopPartners(true); saveFormDraft(); });
+
+  el('verifyMapsLink').addEventListener('click', (e) => {
+    e.preventDefault();
+    const parts = [
+      el('f_unit').value.trim() ? `Unit ${el('f_unit').value.trim()}` : '',
+      el('f_streetNumber').value.trim(),
+      el('f_streetName').value.trim(),
+      el('f_suburb').value.trim(),
+      el('f_state').value.trim(),
+      el('f_postcode').value.trim(),
+      'Australia'
+    ].filter(Boolean).join(' ');
+    window.open(`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(parts || 'Australia')}`, '_blank', 'noopener,noreferrer');
+  });
+
+  // ---------- 7. Live Fault Counter & Policies Accordion Unlock ----------
+  const fFault = el('f_fault');
+  const faultCharCounter = el('faultCharCounter');
+
+  function updateFaultCounter() {
+    const len = fFault.value.length;
+    const max = Number(fFault.getAttribute('maxlength')) || 1200;
+    faultCharCounter.textContent = `${len.toLocaleString()} / ${max.toLocaleString()} characters`;
+    faultCharCounter.classList.toggle('near-limit', len >= max * 0.9);
+  }
+  fFault.addEventListener('input', updateFaultCounter);
+
+  const policiesAccordion = el('policiesAccordion');
+  const agreeBar = el('agreeBar');
+  const fAgree = el('f_agree');
+  const policyBadge = el('policyBadge');
+  const policyLockHint = el('policyLockHint');
+
+  function unlockPoliciesCheckbox() {
+    if (fAgree.disabled) {
+      fAgree.disabled = false;
+      agreeBar.classList.remove('locked');
+      policyBadge.textContent = 'Thanks for Reading ✓';
+      policyLockHint.classList.add('hidden');
+      policiesAccordion.classList.remove('accordion-highlight');
+    }
+  }
+
+  policiesAccordion.addEventListener('toggle', () => {
+    if (policiesAccordion.open) {
+      unlockPoliciesCheckbox();
+      updateRewardProgress();
+      saveFormDraft();
+    }
+  });
+
+  fAgree.addEventListener('change', () => {
+    updateRewardProgress();
+    saveFormDraft();
+  });
+
+  agreeBar.addEventListener('click', (e) => {
+    if (fAgree.disabled) {
+      e.preventDefault();
+      shakeElement(agreeBar);
+      policiesAccordion.classList.remove('accordion-highlight');
+      void policiesAccordion.offsetWidth;
+      policiesAccordion.classList.add('accordion-highlight');
+      policyLockHint.textContent = 'Tap Policy Header Above First ↗';
+      policiesAccordion.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  });
+
+  // ---------- 8. Binary Magic-Byte Verification, Auto-Renaming & Image Compression ----------
+  const uploadedState = {
+    invoice: null,
+    displayPhoto: null,
+    extraFiles: []
+  };
+
+  function formatBytes(bytes) {
+    if (bytes < 1024) return `${bytes} B`;
+    if (bytes < 1048576) return `${(bytes / 1024).toFixed(1)} KB`;
+    return `${(bytes / 1048576).toFixed(2)} MB`;
+  }
+
+  // Inspects the raw binary header (magic bytes) so disguised executables/scripts cannot be uploaded
+  async function verifyFileSignature(file) {
+    const slice = file.slice(0, 12);
+    const buf = await slice.arrayBuffer();
+    const bytes = new Uint8Array(buf);
+
+    // PDF: %PDF (25 50 44 46)
+    if (bytes.length >= 4 && bytes[0] === 0x25 && bytes[1] === 0x50 && bytes[2] === 0x44 && bytes[3] === 0x46) {
+      return 'pdf';
+    }
+    // JPEG: FF D8 FF
+    if (bytes.length >= 3 && bytes[0] === 0xFF && bytes[1] === 0xD8 && bytes[2] === 0xFF) {
+      return 'image';
+    }
+    // PNG: 89 50 4E 47 0D 0A 1A 0A
+    if (bytes.length >= 8 && bytes[0] === 0x89 && bytes[1] === 0x50 && bytes[2] === 0x4E && bytes[3] === 0x47) {
+      return 'image';
+    }
+    // WEBP: RIFF....WEBP
+    if (
+      bytes.length >= 12 &&
+      bytes[0] === 0x52 && bytes[1] === 0x49 && bytes[2] === 0x46 && bytes[3] === 0x46 &&
+      bytes[8] === 0x57 && bytes[9] === 0x45 && bytes[10] === 0x42 && bytes[11] === 0x50
+    ) {
+      return 'image';
+    }
+    throw new Error('Security check: Only genuine PDF, JPG, PNG, or WEBP files are permitted.');
+  }
+
+  // Processes file and strictly renames it to targetSectionName (e.g., "Invoice.pdf" or "Pre-sent Monitor Photo.jpg")
+  async function processFileToAttachment(file, targetSectionName) {
+    const kind = await verifyFileSignature(file);
+    const originalFileName = file.name;
+
+    const currentTotalBytes = [
+      uploadedState.invoice,
+      uploadedState.displayPhoto,
+      ...uploadedState.extraFiles
+    ].filter(Boolean).reduce((sum, item) => sum + (item.size || 0), 0);
+
+    if (currentTotalBytes + file.size > 15 * 1024 * 1024) {
+      throw new Error('Total combined attachments cannot exceed 15 MB. Please upload a smaller file or image.');
+    }
+
+    if (kind === 'pdf') {
+      if (file.size > 6 * 1024 * 1024) {
+        throw new Error('PDF files must be under 6 MB so they can be emailed reliably.');
+      }
+      return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = () => {
+          const base64 = String(reader.result).split(',')[1];
+          resolve({
+            name: `${targetSectionName}.pdf`,
+            originalName: originalFileName,
+            mimeType: 'application/pdf',
+            size: file.size,
+            base64,
+            previewUrl: null
+          });
+        };
+        reader.onerror = () => reject(new Error('Could not read PDF file.'));
+        reader.readAsDataURL(file);
+      });
+    }
+
+    // Re-encode image via HTML5 Canvas (strips metadata/EXIF & compresses to crisp JPEG)
+    return new Promise((resolve, reject) => {
+      const imgUrl = URL.createObjectURL(file);
+      const img = new Image();
+      img.onload = () => {
+        const MAX_DIM = 2000;
+        let { width, height } = img;
+        if (width > MAX_DIM || height > MAX_DIM) {
+          const ratio = Math.min(MAX_DIM / width, MAX_DIM / height);
+          width = Math.round(width * ratio);
+          height = Math.round(height * ratio);
+        }
+        const canvas = document.createElement('canvas');
+        canvas.width = width;
+        canvas.height = height;
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = '#ffffff';
+        ctx.fillRect(0, 0, width, height);
+        ctx.drawImage(img, 0, 0, width, height);
+
+        const dataUrl = canvas.toDataURL('image/jpeg', 0.84);
+        const base64 = dataUrl.split(',')[1];
+        const approxBytes = Math.round((base64.length * 3) / 4);
+        URL.revokeObjectURL(imgUrl);
+
+        resolve({
+          name: `${targetSectionName}.jpg`,
+          originalName: originalFileName,
+          mimeType: 'image/jpeg',
+          size: approxBytes,
+          base64,
+          previewUrl: dataUrl
+        });
+      };
+      img.onerror = () => {
+        URL.revokeObjectURL(imgUrl);
+        reject(new Error('Unsupported image format. Please upload a JPG, PNG, WEBP, or PDF.'));
+      };
+      img.src = imgUrl;
+    });
+  }
+
+  function renderUploadSlot(slotKey) {
+    if (slotKey === 'invoice') {
+      const card = el('invoiceDropCard');
+      const badge = el('invoiceBadge');
+      const list = el('invoiceFileList');
+      const item = uploadedState.invoice;
+      card.classList.toggle('has-file', Boolean(item));
+      badge.textContent = item ? `Saved as "${item.name}" ✓` : 'Required · Auto-saved as "Invoice"';
+      list.innerHTML = item ? `
+        <div class="file-pill">
+          <div class="file-pill-left">
+            ${item.previewUrl ? `<img src="${escapeHtml(item.previewUrl)}" class="file-thumb" alt="Invoice preview">` : '📄'}
+            <div class="file-meta-wrap">
+              <span class="file-name">${escapeHtml(item.name)} <span class="file-size">(${formatBytes(item.size)})</span></span>
+              <span class="file-orig">Renamed from: ${escapeHtml(item.originalName)}</span>
+            </div>
+          </div>
+          <button type="button" class="btn-remove-file" data-remove="invoice">Remove ✕</button>
+        </div>
+      ` : '';
+    } else if (slotKey === 'displayPhoto') {
+      const card = el('displayDropCard');
+      const badge = el('displayBadge');
+      const list = el('displayFileList');
+      const item = uploadedState.displayPhoto;
+      card.classList.toggle('has-file', Boolean(item));
+      badge.textContent = item ? `Saved as "${item.name}" ✓` : 'Required · Auto-saved as "Pre-sent Monitor Photo"';
+      list.innerHTML = item ? `
+        <div class="file-pill">
+          <div class="file-pill-left">
+            ${item.previewUrl ? `<img src="${escapeHtml(item.previewUrl)}" class="file-thumb" alt="Display preview">` : '🖥️'}
+            <div class="file-meta-wrap">
+              <span class="file-name">${escapeHtml(item.name)} <span class="file-size">(${formatBytes(item.size)})</span></span>
+              <span class="file-orig">Renamed from: ${escapeHtml(item.originalName)}</span>
+            </div>
+          </div>
+          <button type="button" class="btn-remove-file" data-remove="displayPhoto">Remove ✕</button>
+        </div>
+      ` : '';
+    } else if (slotKey === 'extraFiles') {
+      const card = el('extraDropCard');
+      const badge = el('extraBadge');
+      const list = el('extraFileList');
+      const items = uploadedState.extraFiles;
+      // Re-index names sequentially so they are always Additional Fault Photo 1, 2, 3
+      items.forEach((it, i) => {
+        const ext = it.mimeType === 'application/pdf' ? 'pdf' : 'jpg';
+        it.name = `Additional Fault Photo ${i + 1}.${ext}`;
+      });
+      card.classList.toggle('has-file', items.length > 0);
+      badge.textContent = items.length > 0 ? `${items.length} Attached ✓` : 'Optional (Up to 3)';
+      list.innerHTML = items.map((item, idx) => `
+        <div class="file-pill">
+          <div class="file-pill-left">
+            ${item.previewUrl ? `<img src="${escapeHtml(item.previewUrl)}" class="file-thumb" alt="Fault preview">` : '📎'}
+            <div class="file-meta-wrap">
+              <span class="file-name">${escapeHtml(item.name)} <span class="file-size">(${formatBytes(item.size)})</span></span>
+              <span class="file-orig">Renamed from: ${escapeHtml(item.originalName)}</span>
+            </div>
+          </div>
+          <button type="button" class="btn-remove-file" data-remove-extra="${idx}">Remove ✕</button>
+        </div>
+      `).join('');
+    }
+    updateRewardProgress();
+  }
+
+  function wireDropzone(cardId, triggerId, inputId, handler) {
+    const card = el(cardId);
+    const trigger = el(triggerId);
+    const input = el(inputId);
+
+    trigger.addEventListener('click', () => input.click());
+    trigger.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); input.click(); }
+    });
+    input.addEventListener('change', () => {
+      if (input.files && input.files.length) {
+        handler(Array.from(input.files));
+        input.value = '';
+      }
+    });
+    ['dragenter', 'dragover'].forEach(evt => {
+      card.addEventListener(evt, (e) => { e.preventDefault(); card.classList.add('dragover'); });
+    });
+    ['dragleave', 'drop'].forEach(evt => {
+      card.addEventListener(evt, (e) => { e.preventDefault(); card.classList.remove('dragover'); });
+    });
+    card.addEventListener('drop', (e) => {
+      if (e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files.length) {
+        handler(Array.from(e.dataTransfer.files));
+      }
+    });
+  }
+
+  wireDropzone('invoiceDropCard', 'invoiceTrigger', 'f_file_invoice', async (files) => {
+    try {
+      uploadedState.invoice = await processFileToAttachment(files[0], 'Invoice');
+      renderUploadSlot('invoice');
+    } catch (err) { alert(err.message); }
+  });
+
+  wireDropzone('displayDropCard', 'displayTrigger', 'f_file_display', async (files) => {
+    try {
+      uploadedState.displayPhoto = await processFileToAttachment(files[0], 'Pre-sent Monitor Photo');
+      renderUploadSlot('displayPhoto');
+    } catch (err) { alert(err.message); }
+  });
+
+  wireDropzone('extraDropCard', 'extraTrigger', 'f_file_extra', async (files) => {
+    for (const f of files) {
+      if (uploadedState.extraFiles.length >= 3) break;
+      try {
+        const nextNum = uploadedState.extraFiles.length + 1;
+        const processed = await processFileToAttachment(f, `Additional Fault Photo ${nextNum}`);
+        uploadedState.extraFiles.push(processed);
+      } catch (err) { alert(err.message); }
+    }
+    renderUploadSlot('extraFiles');
+  });
+
+  el('uploadSection').addEventListener('click', (e) => {
+    const removeKey = e.target.getAttribute('data-remove');
+    const removeExtraIdx = e.target.getAttribute('data-remove-extra');
+    if (removeKey) {
+      uploadedState[removeKey] = null;
+      renderUploadSlot(removeKey);
+    } else if (removeExtraIdx !== null) {
+      uploadedState.extraFiles.splice(Number(removeExtraIdx), 1);
+      renderUploadSlot('extraFiles');
+    }
+  });
+
+  // ---------- 9. Wizard Navigation, Validation & Brain-Reward Progress Bar ----------
+  let currentStep = 1;
+  let maxReachedStep = 1;
+  const totalSteps = 5;
+  const rmaForm = el('rmaForm');
+  const stepSections = Array.from(document.querySelectorAll('.wizard-step'));
+  const progressButtons = Array.from(document.querySelectorAll('.progress-step'));
+  const progressFill = el('progressFill');
+  const progressStatusText = el('progressStatusText');
+  const progressPctPill = el('progressPctPill');
+
+  const STEP_NAMES = {
+    1: 'Step 1 of 5 · Choose Your Product',
+    2: 'Step 2 of 5 · Your Contact & Shipping Details',
+    3: 'Step 3 of 5 · Serial Number & Fault Details',
+    4: 'Step 4 of 5 · Return Shipping Preference',
+    5: 'Step 5 of 5 · Upload Files & Submit'
+  };
+
+  function updateRewardProgress() {
+    let pct = (currentStep - 1) * 20;
+    if (currentStep === 1 && fCategory.value) pct = 15;
+    if (currentStep === 5) {
+      const isDisplay = (fCategory.value === 'monitor' || fCategory.value === 'aio');
+      let bonus = 0;
+      if (uploadedState.invoice) bonus += isDisplay ? 7 : 12;
+      if (isDisplay && uploadedState.displayPhoto) bonus += 5;
+      if (fAgree.checked) bonus += 8;
+      pct = 80 + bonus;
+    }
+    progressFill.style.width = `${pct}%`;
+    progressStatusText.textContent = STEP_NAMES[currentStep] || '';
+    progressPctPill.textContent = pct >= 100 ? '100% Ready to Send ✓' : `${pct}% Complete`;
+    progressPctPill.classList.toggle('complete', pct >= 100);
+  }
+
+  function getNormalizedAddress() {
+    const unit = el('f_unit').value.trim();
+    const num = el('f_streetNumber').value.trim();
+    const street = el('f_streetName').value.trim();
+    const suburb = el('f_suburb').value.trim();
+    const state = el('f_state').value.trim();
+    const postcode = el('f_postcode').value.trim();
+    const streetPart = unit ? `Unit ${unit}, ${num} ${street}` : `${num} ${street}`;
+    return `${streetPart}, ${suburb} ${state} ${postcode}`;
+  }
+
+  function shakeElement(target) {
+    if (!target) return;
+    target.classList.remove('shake');
+    void target.offsetWidth;
+    target.classList.add('shake');
+  }
+
+  function validateStep(step) {
+    const section = document.querySelector(`.wizard-step[data-step="${step}"]`);
+    if (!section) return true;
+
+    if (step === 1) {
+      if (!fCategory.value) {
+        shakeElement(el('categoryIconGrid'));
+        return false;
+      }
+      if ((fCategory.value === 'monitor' || fCategory.value === 'component') && fAmazon.value !== 'no') {
+        shakeElement(amazonGateField);
+        return false;
+      }
+      return true;
+    }
+
+    if (step === 2) validateStatePostcode();
+
+    if (step === 3) {
+      if (fWarrantyStatus.value === 'EXTENDED_3RD_PARTY' || (fWarrantyStatus.value === 'NO' && isStrictNoOowCategory())) {
+        shakeElement(fWarrantyStatus);
+        return false;
+      }
+    }
+
+    if (step === 4) {
+      const selectedShip = section.querySelector('input[name="Return Shipping Preference"]:checked');
+      if (!selectedShip) {
+        const firstVisibleRadio = section.querySelector('.radio-card:not(.hidden) input');
+        if (firstVisibleRadio) {
+          firstVisibleRadio.setCustomValidity('Please select how you would like to send your product to us.');
+          firstVisibleRadio.reportValidity();
+          firstVisibleRadio.setCustomValidity('');
+        }
+        shakeElement(section.querySelector('.ship-grid'));
+        return false;
+      }
+      return true;
+    }
+
+    const inputs = Array.from(section.querySelectorAll('input, select, textarea')).filter(
+      inp => !inp.closest('.hidden') && !inp.disabled && inp.type !== 'file' && !inp.classList.contains('hp-field')
+    );
+
+    for (const inp of inputs) {
+      if (!inp.checkValidity()) {
+        inp.reportValidity();
+        shakeElement(inp);
+        return false;
+      }
+    }
+
+    if (step === 5) {
+      const isDisplay = (fCategory.value === 'monitor' || fCategory.value === 'aio');
+      if (!uploadedState.invoice) {
+        shakeElement(el('invoiceDropCard'));
+        el('invoiceDropCard').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        return false;
+      }
+      if (isDisplay && !uploadedState.displayPhoto) {
+        shakeElement(el('displayDropCard'));
+        el('displayDropCard').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        return false;
+      }
+      if (!fAgree.checked) {
+        if (fAgree.disabled) {
+          policiesAccordion.classList.add('accordion-highlight');
+          policyLockHint.textContent = 'Tap Policy Header Above First ↗';
+        }
+        fAgree.reportValidity();
+        shakeElement(agreeBar);
+        return false;
+      }
+    }
+
+    return true;
+  }
+
+  function renderStepState() {
+    stepSections.forEach(sec => {
+      const stepNum = Number(sec.getAttribute('data-step'));
+      sec.classList.toggle('hidden', stepNum !== currentStep);
+    });
+
+    progressButtons.forEach(btn => {
+      const stepNum = Number(btn.getAttribute('data-goto'));
+      btn.classList.toggle('current', stepNum === currentStep);
+      btn.classList.toggle('done', stepNum < currentStep);
+      btn.disabled = stepNum > maxReachedStep;
+    });
+
+    updateRewardProgress();
+  }
+
+  function goToStep(targetStep) {
+    if (targetStep < 1 || targetStep > totalSteps || targetStep === currentStep) return;
+    if (targetStep > currentStep) {
+      for (let s = currentStep; s < targetStep; s++) {
+        if (!validateStep(s)) {
+          if (s !== currentStep) {
+            rmaForm.setAttribute('data-dir', s > currentStep ? 'forward' : 'back');
+            currentStep = s;
+            renderStepState();
+            saveFormDraft();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            setTimeout(() => validateStep(s), 60);
+          }
+          return;
+        }
+      }
+    }
+    rmaForm.setAttribute('data-dir', targetStep > currentStep ? 'forward' : 'back');
+    currentStep = targetStep;
+    if (currentStep > maxReachedStep) maxReachedStep = currentStep;
+
+    renderStepState();
+    saveFormDraft();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  document.querySelectorAll('[data-nav="next"]').forEach(btn => btn.addEventListener('click', () => goToStep(currentStep + 1)));
+  document.querySelectorAll('[data-nav="back"]').forEach(btn => btn.addEventListener('click', () => goToStep(currentStep - 1)));
+  progressButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const target = Number(btn.getAttribute('data-goto'));
+      if (!btn.disabled) goToStep(target);
+    });
+  });
+
+  // ---------- 10. sessionStorage Auto-Save & Draft Recovery ----------
+  const PERSIST_IDS = [
+    'f_category', 'f_amazon', 'f_customer', 'f_email', 'f_phone', 'f_owner',
+    'f_unit', 'f_streetNumber', 'f_streetName', 'f_suburb', 'f_state', 'f_postcode',
+    'f_barcode', 'f_warranty_status', 'f_fault', 'f_login_name', 'f_reset'
+  ];
+  const resetDraftBtn = el('resetDraftBtn');
+
+  function updateResetButtonVisibility() {
+    const hasContent = Boolean(fCategory.value || el('f_customer').value.trim() || el('f_barcode').value.trim());
+    resetDraftBtn.classList.toggle('hidden', !hasContent);
+  }
+
+  function saveFormDraft() {
+    try {
+      const fields = {};
+      PERSIST_IDS.forEach(id => {
+        const node = el(id);
+        if (node) fields[id] = node.value;
+      });
+      const shipChecked = document.querySelector('input[name="Return Shipping Preference"]:checked');
+      const draft = {
+        theme: root.getAttribute('data-theme') || 'light',
+        fields,
+        shipping: shipChecked ? shipChecked.value : '',
+        policiesUnlocked: !fAgree.disabled,
+        agreeChecked: fAgree.checked,
+        currentStep,
+        maxReachedStep
+      };
+      sessionStorage.setItem(DRAFT_KEY, JSON.stringify(draft));
+      updateResetButtonVisibility();
+    } catch (_) {}
+  }
+
+  function restoreFormDraft() {
+    try {
+      const raw = sessionStorage.getItem(DRAFT_KEY);
+      if (!raw) { updateSnGuideUI(); return; }
+      const draft = JSON.parse(raw);
+      if (!draft || typeof draft !== 'object') { updateSnGuideUI(); return; }
+
+      if (draft.theme === 'dark' || draft.theme === 'light') applyTheme(draft.theme);
+      if (draft.fields) {
+        PERSIST_IDS.forEach(id => {
+          const node = el(id);
+          if (node && typeof draft.fields[id] === 'string') node.value = draft.fields[id];
+        });
+      }
+
+      updateCategoryUI();
+      ownerWarningInline.classList.toggle('hidden', fOwner.value !== 'NO');
+      resetNoWarningInline.classList.toggle('hidden', fReset.value !== 'No');
+      checkRegionalLaptopPartners(false);
+      updateWarrantyStatusUI(false);
+      validateStatePostcode();
+      updateFaultCounter();
+
+      if (draft.shipping) {
+        const radio = document.querySelector(`input[name="Return Shipping Preference"][value="${CSS.escape(draft.shipping)}"]`);
+        if (radio && !radio.closest('.hidden')) radio.checked = true;
+      }
+
+      updateDropOffPolicyVisibility();
+
+      if (draft.policiesUnlocked) {
+        unlockPoliciesCheckbox();
+        fAgree.checked = Boolean(draft.agreeChecked);
+      }
+
+      if (typeof draft.maxReachedStep === 'number' && draft.maxReachedStep >= 1 && draft.maxReachedStep <= totalSteps) {
+        maxReachedStep = draft.maxReachedStep;
+      }
+      if (typeof draft.currentStep === 'number' && draft.currentStep >= 1 && draft.currentStep <= maxReachedStep) {
+        currentStep = draft.currentStep;
+      }
+
+      renderStepState();
+      updateResetButtonVisibility();
+    } catch (_) {
+      updateSnGuideUI();
+    }
+  }
+
+  rmaForm.addEventListener('input', saveFormDraft);
+
+  resetDraftBtn.addEventListener('click', () => {
+    isApplicationSubmitted = false;
+    el('submitBtn').disabled = false;
+    el('submitBtn').innerHTML = '<svg viewBox="0 0 24 24"><path d="M22 2L11 13"></path><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg><span>Submit Warranty Application &amp; Files</span>';
+    try { sessionStorage.removeItem(DRAFT_KEY); } catch (_) {}
+    rmaForm.reset();
+    fCategory.value = '';
+    fAmazon.value = '';
+    lastPromptedPartnerKey = '';
+    uploadedState.invoice = null;
+    uploadedState.displayPhoto = null;
+    uploadedState.extraFiles = [];
+    renderUploadSlot('invoice');
+    renderUploadSlot('displayPhoto');
+    renderUploadSlot('extraFiles');
+    ownerWarningInline.classList.add('hidden');
+    leaderWaInline.classList.add('hidden');
+    centrecomVicInline.classList.add('hidden');
+    resetNoWarningInline.classList.add('hidden');
+    warrantyStatusInline.classList.add('hidden');
+    warrantyStatusInline.innerHTML = '';
+    fAgree.checked = false;
+    fAgree.disabled = true;
+    agreeBar.classList.add('locked');
+    policyBadge.textContent = 'Tap to Read';
+    policyLockHint.textContent = 'Tap Policy Accordion Above to Read';
+    policyLockHint.classList.remove('hidden');
+    policiesAccordion.classList.remove('accordion-highlight');
+    policiesAccordion.open = false;
+    el('statusBox').className = 'status';
+    el('statusBox').innerHTML = '';
+    currentStep = 1;
+    maxReachedStep = 1;
+    updateCategoryUI();
+    validateStatePostcode();
+    updateFaultCounter();
+    renderStepState();
+    updateResetButtonVisibility();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  restoreFormDraft();
+
+  // ---------- 11. Google Apps Script Web App Submission + Auto-Wipe + Celebratory Reward ----------
+  let isApplicationSubmitted = false;
+  rmaForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    if (isApplicationSubmitted) return;
+
+    // Anti-bot honeypot check
+    if (el('f_website_hp').value) return;
+
+    for (let s = 1; s <= totalSteps; s++) {
+      if (!validateStep(s)) {
+        if (s !== currentStep) goToStep(s);
+        return;
+      }
+    }
+
+    const cat = fCategory.value;
+    const catLabel = CATEGORY_LABELS[cat] || cat;
+    const customer = el('f_customer').value.trim();
+    const email = el('f_email').value.trim();
+    const phone = el('f_phone').value.trim();
+    const owner = el('f_owner').value;
+    const address = getNormalizedAddress();
+    const serial = el('f_barcode').value.trim();
+    const warrantyVal = fWarrantyStatus.value;
+    const warrantyLabel = WARRANTY_STATUS_LABELS[warrantyVal] || warrantyVal;
+    const fault = el('f_fault').value.trim();
+    const isSystem = (cat === 'aio' || cat === 'laptop' || cat === 'system');
+    const isDisplay = (cat === 'monitor' || cat === 'aio');
+    const loginName = isSystem ? (el('f_login_name').value.trim() || 'N/A') : 'N/A';
+    const loginPass = isSystem ? (el('f_password').value.trim() || 'N/A') : 'N/A';
+    const resetPerm = isSystem ? el('f_reset').value : 'N/A';
+    const shippingEl = document.querySelector('input[name="Return Shipping Preference"]:checked');
+    const shipping = shippingEl ? shippingEl.value : 'Not specified';
+
+    const subject = `MSI Warranty Service Application - S/N: ${serial} - ${customer}`;
+
+    const filesToSend = [
+      uploadedState.invoice,
+      ...(isDisplay && uploadedState.displayPhoto ? [uploadedState.displayPhoto] : []),
+      ...uploadedState.extraFiles
+    ].filter(Boolean).map(f => ({
+      name: f.name,
+      mimeType: f.mimeType,
+      base64: f.base64
+    }));
+
+    const fullBody = [
+      'MSI AUSTRALIA WARRANTY SERVICE APPLICATION (v6.0)',
+      '==================================================',
+      '',
+      '1. CUSTOMER & SHIPPING DETAILS',
+      `• Full Name / Business: ${customer}`,
+      `• Email Address: ${email}`,
+      `• Phone Number: ${phone}`,
+      `• Original Owner: ${owner}`,
+      `• Physical Return Address: ${address}`,
+      ...(isNearLeaderComputersWA() ? ['• Local WA Laptop Option (Leader Computers Osborne Park): Advised — Customer chose to proceed directly with MSI Australia'] : []),
+      ...(isNearCentreComVIC() ? ['• Local VIC Laptop Option (Centre Com Melbourne — Centre Com Customers Only): Advised — Customer chose to proceed directly with MSI Australia'] : []),
+      '',
+      '2. PRODUCT & FAULT DETAILS',
+      `• Product Category: ${catLabel}`,
+      `• Serial Number (S/N): ${serial}`,
+      `• Warranty Status (Customer Advised): ${warrantyLabel}`,
+      `• Fault Description: ${fault}`,
+      ...(isSystem ? [
+        `• Windows Login Name: ${loginName}`,
+        `• Windows Password / PIN: ${loginPass}`,
+        `• Factory Reset Permitted: ${resetPerm}`,
+        ...(resetPerm === 'No' ? ['• Factory Reset Declined Notice Acknowledged: YES (Customer advised unit may be returned unrepaired if reset is required & data is owner responsibility)'] : [])
+      ] : []),
+      '',
+      '3. RETURN SHIPPING PREFERENCE',
+      `• Selected Option: ${shipping}`,
+      ...(cat === 'component' ? ['• Reseller Return Option Advised: YES (Customer advised they may also return to original reseller for shipping assistance)'] : []),
+      '',
+      '4. UPLOADED ATTACHMENTS INCLUDED IN THIS SUBMISSION',
+      ...filesToSend.map(f => `• [Attached] ${f.name}`),
+      '',
+      '5. CUSTOMER DECLARATION & SERVICE NOTES',
+      '• Agreed to MSI Australia Warranty Terms & Conditions (including OOW & No Fault Found fee clauses): YES',
+      '• Turnaround Time Acknowledged: Typical 5-10 business days upon arrival (subject to parts stock, Taiwan HQ parts transit, and service workload)',
+      ...(isDisplay ? ['• Pre-Sent Monitor Photo Condition Record Acknowledged: YES (Pre-transit 4-bezel condition & warranty verification)'] : []),
+      ...(radioDropOff.checked ? ['• Local Drop-Off / Pick-Up Policy Acknowledged: YES (Mon-Fri, 10:00 AM - 4:00 PM)'] : [])
+    ].join('\r\n');
+
+    const submitBtn = el('submitBtn');
+    const origBtnHtml = submitBtn.innerHTML;
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<span>Uploading files &amp; lodging application...</span>';
+
+    try {
+      const response = await fetch(GAS_WEB_APP_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+        body: JSON.stringify({
+          token: CLIENT_INTEGRITY_TOKEN,
+          hp_trap: el('f_website_hp').value,
+          subject,
+          customerName: customer,
+          customerEmail: email,
+          body: fullBody,
+          files: filesToSend
+        }),
+        redirect: 'follow'
+      });
+
+      const result = await response.json();
+      if (result.status !== 'ok') {
+        throw new Error(result.message || 'Submission error.');
+      }
+
+      // Security cleanup: wipe sessionStorage draft & sensitive fields immediately after lodging
+      isApplicationSubmitted = true;
+      try { sessionStorage.removeItem(DRAFT_KEY); } catch (_) {}
+      fPassword.value = '';
+
+      progressFill.style.width = '100%';
+      progressPctPill.textContent = '100% Lodged! 🎉';
+      progressPctPill.classList.add('complete');
+
+      el('modalAttachmentCount').textContent = `${filesToSend.length} attached file${filesToSend.length === 1 ? '' : 's'} (${filesToSend.map(f => f.name).join(', ')})`;
+      submitSuccessModal.classList.remove('hidden');
+      fireCelebrationConfetti();
+
+      const statusBox = el('statusBox');
+      statusBox.className = 'status ok';
+      statusBox.innerHTML = `
+        <b>🎉 Your MSI Warranty Application &amp; ${filesToSend.length} file(s) have been securely lodged!</b><br>
+        We've received your application (${escapeHtml(filesToSend.map(f => f.name).join(', '))}) directly at the MSI Australia Service Centre. Our team will reply to <b>${escapeHtml(email)}</b>.<br><br>
+        • <b>Expected Response Time:</b> Usually 30–60 business minutes with your RMA number and shipping instructions.<br>
+        • <b>No Response After 1 Business Day?</b> Reach out to our team at <a href="https://www.msi.com/page/hot-line#area=Oceania" target="_blank" rel="noopener noreferrer" class="helper-link">msi.com/page/hot-line#area=Oceania ↗</a><br>
+        • <b>Track Your RMA Progress:</b> Once issued, track your RMA at <a href="https://account.msi.com/en/services/inquiry-history" target="_blank" rel="noopener noreferrer" class="helper-link">account.msi.com/en/services/inquiry-history ↗</a>
+      `;
+    } catch (err) {
+      alert(`We couldn't complete the upload automatically (${err.message}). Please check your internet connection and try clicking Submit again.`);
+    } finally {
+      if (isApplicationSubmitted) {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<span>✓ Application &amp; Files Lodged Successfully</span>';
+      } else {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = origBtnHtml;
+      }
+    }
+  });
+})();
+</script>
+</body>
+</html>
